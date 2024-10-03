@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "economics of climate change",
+    "section": "",
+    "text": "This is a website that houses notes for an undergraduate course on the economics of climate change. This course follows the course structure of Casey Wichman’s ECON-4210 course developed at Georgia Tech.\nThis course explores the economic causes and consequences of climate change—the “mother of all externalities”—and potential solutions. Misguided market forces, via unpriced and unregulated greenhouse gas (GHG) emissions, contribute to global warming. Because GHG emissions stem from economic decisions we make every day—from driving to work to powering our computers to eating a hamburger—the economic impact of policies aimed at reducing GHG emissions are pervasive. This course uses the tools of economics to understand the origins of climate change; to explore the effects of climate on different facets of the economy now and in the future; and to evaluate the effectiveness, costs, and benefits of policies designed to reduce climate change. Particular focus is given to:\n\nUnderstanding the methods used to measure and value damages from climate change\nAnalyzing the pros and cons of market-based policies designed to reduce GHG emissions\nInvestigating the role of adaptation and innovation as potential climate solutions\nEvaluating the equity implications of climate impacts and climate policy\n\nStudents will acquire a broad understanding of the costs of unchecked climate change and an ability to evaluate current policy debates through an economic lens."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "economics of climate change",
+    "section": "",
+    "text": "This is a website that houses notes for an undergraduate course on the economics of climate change. This course follows the course structure of Casey Wichman’s ECON-4210 course developed at Georgia Tech.\nThis course explores the economic causes and consequences of climate change—the “mother of all externalities”—and potential solutions. Misguided market forces, via unpriced and unregulated greenhouse gas (GHG) emissions, contribute to global warming. Because GHG emissions stem from economic decisions we make every day—from driving to work to powering our computers to eating a hamburger—the economic impact of policies aimed at reducing GHG emissions are pervasive. This course uses the tools of economics to understand the origins of climate change; to explore the effects of climate on different facets of the economy now and in the future; and to evaluate the effectiveness, costs, and benefits of policies designed to reduce climate change. Particular focus is given to:\n\nUnderstanding the methods used to measure and value damages from climate change\nAnalyzing the pros and cons of market-based policies designed to reduce GHG emissions\nInvestigating the role of adaptation and innovation as potential climate solutions\nEvaluating the equity implications of climate impacts and climate policy\n\nStudents will acquire a broad understanding of the costs of unchecked climate change and an ability to evaluate current policy debates through an economic lens."
+  },
+  {
+    "objectID": "index.html#disclaimer",
+    "href": "index.html#disclaimer",
+    "title": "economics of climate change",
+    "section": "disclaimer",
+    "text": "disclaimer\nDISCLAIMER: This website is a living, breathing, work-in-progress. I am updating content and half-thoughts sporadically throughout the semester. There are probably factual errors and all content is subject to change. Moreover, I am using this project as a tool to learn how to develop interactive websites via Quarto, so you should anticipate technical issues. Buyer beware. If you have suggestions, concerns, and/or words of anger or affirmation, feel free to reach out to me at wichman@gatech.edu."
+  },
+  {
+    "objectID": "index.html#course-overview",
+    "href": "index.html#course-overview",
+    "title": "economics of climate change",
+    "section": "course overview",
+    "text": "course overview\n\npart 1 – causes and consequences of climate change\n\nWhat is climate change?\nHow are the climate and the economy linked?\nWhy is climate change an economic problem?\nWhat are the costs and benefits of climate change?\nShould I care about my grandchildren’s future?\nCan we put a price on climate impacts?\nWho bears the burden of climate impacts?\n\n\n\npart 2 – economic approaches to solving climate change\n\nHow would an economist solve climate change?\nCan’t we just live with climate change?\nWho pays for a carbon tax?\nDoes behavior undermine climate policy?\nWhat don’t we know about climate change?\nCan we address climate change on our own?\nCan we fix climate change with this one weird trick?\nIs changing our own behavior the solution?"
+  }
+]
