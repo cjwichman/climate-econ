@@ -26,5 +26,306 @@
     "title": "economics of climate change",
     "section": "course overview",
     "text": "course overview\n\npart 1 – causes and consequences of climate change\n\nWhat is climate change?\nHow are the climate and the economy linked?\nWhy is climate change an economic problem?\nWhat are the costs and benefits of climate change?\nShould I care about my grandchildren’s future?\nCan we put a price on climate impacts?\nWho bears the burden of climate impacts?\n\n\n\npart 2 – economic approaches to solving climate change\n\nHow would an economist solve climate change?\nCan’t we just live with climate change?\nWho pays for a carbon tax?\nDoes behavior undermine climate policy?\nWhat don’t we know about climate change?\nCan we address climate change on our own?\nCan we fix climate change with this one weird trick?\nIs changing our own behavior the solution?"
+  },
+  {
+    "objectID": "1-1-what-is-climate-change.html",
+    "href": "1-1-what-is-climate-change.html",
+    "title": "1.1 – what is climate change?",
+    "section": "",
+    "text": "Really old plants and organic material decompose, creating fossil fuels (i.e., natural gas, oil, coal). When we burn fossil fuels, we release those carbon molecules as carbon dioxide (CO2) into the atmosphere. This disrupts the natural carbon cycle, which is the process by which carbon is exchanged between the atmosphere, oceans, and land."
+  },
+  {
+    "objectID": "1-1-what-is-climate-change.html#the-carbon-cycle",
+    "href": "1-1-what-is-climate-change.html#the-carbon-cycle",
+    "title": "1.1 – what is climate change?",
+    "section": "",
+    "text": "Really old plants and organic material decompose, creating fossil fuels (i.e., natural gas, oil, coal). When we burn fossil fuels, we release those carbon molecules as carbon dioxide (CO2) into the atmosphere. This disrupts the natural carbon cycle, which is the process by which carbon is exchanged between the atmosphere, oceans, and land."
+  },
+  {
+    "objectID": "1-1-what-is-climate-change.html#the-greenhouse-effect",
+    "href": "1-1-what-is-climate-change.html#the-greenhouse-effect",
+    "title": "1.1 – what is climate change?",
+    "section": "the greenhouse effect",
+    "text": "the greenhouse effect\nThe greenhouse effect is the process by which the Earth’s atmosphere traps heat. The greenhouse effect is a natural process that keeps the Earth’s surface warm enough to support life. Without the greenhouse effect, the Earth’s surface would be about 30 degrees Celsius cooler."
+  },
+  {
+    "objectID": "1-1-what-is-climate-change.html#the-intergovernmental-panel-on-climate-change-ipcc",
+    "href": "1-1-what-is-climate-change.html#the-intergovernmental-panel-on-climate-change-ipcc",
+    "title": "1.1 – what is climate change?",
+    "section": "the Intergovernmental Panel on Climate Change (IPCC)",
+    "text": "the Intergovernmental Panel on Climate Change (IPCC)\nThe Intergovernmental Panel on Climate Change (IPCC) is the United Nations body for assessing the science related to climate change. The IPCC was established in 1988 by the World Meteorological Organization (WMO) and the United Nations Environment Programme (UNEP). The IPCC is responsible for providing policymakers with regular assessments of the scientific basis of climate change, its impacts and future risks, and options for adaptation and mitigation. The IPCC does not conduct its own research, but rather reviews and synthesizes existing research. The IPCC’s most recent assessment report, the Sixth Assessment Report (AR6), was released in August 2021."
+  },
+  {
+    "objectID": "1-1-what-is-climate-change.html#attribution-of-warming-to-human-activity",
+    "href": "1-1-what-is-climate-change.html#attribution-of-warming-to-human-activity",
+    "title": "1.1 – what is climate change?",
+    "section": "attribution of warming to human activity",
+    "text": "attribution of warming to human activity\nAR6 of the IPCC included the following statement about the role of human influence on climate change: “It is unequivocal that human influence has warmed the atmosphere, ocean and land. Widespread and rapid changes in the atmosphere, ocean, cryosphere and biosphere have occurred.” This statement is the strongest statement the IPCC has made to date about the role of human activity in climate change.\n\n\n\nAttribution of warming to human activity. Source: IPCC (AR6), [link]."
+  },
+  {
+    "objectID": "1-1-what-is-climate-change.html#equilibrium-climate-sensitivity",
+    "href": "1-1-what-is-climate-change.html#equilibrium-climate-sensitivity",
+    "title": "1.1 – what is climate change?",
+    "section": "equilibrium climate sensitivity",
+    "text": "equilibrium climate sensitivity\nEquilibrium climate sensitivity (or ECS) is the change in global mean surface temperature following a doubling of atmospheric CO2 concentration. It is a measure of the climate system’s response to a change in radiative forcing. ECS is useful for understanding how increases in CO2 in the atmosphere result in changes in surface temperature changes. In IPCC AR6, ECS is estimated to be in the likely range of 2.5–4.0 and very likely range of 2.0–5.0 degrees Celsius, with a best estimate of 3.0 degrees Celsius.\n\n\n\nEquilibrium climate sensitivity. Source: IPCC (AR6), [link]"
+  },
+  {
+    "objectID": "1-1-what-is-climate-change.html#climate-vs.-weather",
+    "href": "1-1-what-is-climate-change.html#climate-vs.-weather",
+    "title": "1.1 – what is climate change?",
+    "section": "climate vs. weather",
+    "text": "climate vs. weather\nClimate is the long-run joint distribution of weather. Think of a bell curve or normal distribution. Typically, summers in Atlanta are hot and humid. That’s climate. Weather is a draw from that distribution (e.g., it’s raining today). Climate change can be represented by a shift or “flattening” of the distribution of weather, or both.\n\n\n\nClimate change and weather. Source: National Academies, 2016, [Link]."
+  },
+  {
+    "objectID": "1-1-what-is-climate-change.html#resources-and-further-reading",
+    "href": "1-1-what-is-climate-change.html#resources-and-further-reading",
+    "title": "1.1 – what is climate change?",
+    "section": "resources and further reading",
+    "text": "resources and further reading\n\nHsiang and Kopp, 2018. “An Economist’s Guide to Climate Change Science,” Journal of Economic Perspectives.\nIPCC, Sixth Assessment Report, 2021.\n“A 1912 news article ominously forecasted the catastrophic effects of fossil fuels on climate change,” Quartz, Oct. 2016.\nA Timeline of Earth’s Average Temperature, XKCD."
+  },
+  {
+    "objectID": "1-2-climate-and-economy.html",
+    "href": "1-2-climate-and-economy.html",
+    "title": "1.2 – how are the climate and economy linked?",
+    "section": "",
+    "text": "Modern economies are built on the use of fossil fuels. The burning of fossil fuels releases carbon dioxide into the atmosphere, which traps heat and causes global warming. The more fossil fuels we burn, the more carbon dioxide we release, and the more the climate changes."
+  },
+  {
+    "objectID": "1-2-climate-and-economy.html#sources-of-greenhouse-gas-emissions",
+    "href": "1-2-climate-and-economy.html#sources-of-greenhouse-gas-emissions",
+    "title": "1.2 – how are the climate and economy linked?",
+    "section": "sources of greenhouse gas emissions",
+    "text": "sources of greenhouse gas emissions\n\n\n\nGlobal sources of GHG emissions Source: Our World in Data, [Link]."
+  },
+  {
+    "objectID": "1-2-climate-and-economy.html#resources-and-further-reading",
+    "href": "1-2-climate-and-economy.html#resources-and-further-reading",
+    "title": "1.2 – how are the climate and economy linked?",
+    "section": "resources and further reading",
+    "text": "resources and further reading\n\nCovert, Greenstone, & Knittel, 2016. “Will we ever stop using fossil fuels?”, Journal of Economic Perspectives."
+  },
+  {
+    "objectID": "1-3-climate-economics.html",
+    "href": "1-3-climate-economics.html",
+    "title": "1.3 – why is climate change an economic problem?",
+    "section": "",
+    "text": "Climate change is a massive unpriced externality.\nWhen we fail to account for the social costs of our production and consumption decisions, we tend to overproduce and overconsume.\nMarkets are useful tools because they efficiently allocate scarce resources. What does this mean? Well, markets maximize net surplus by balancing the benefits we get from consumption with the costs of producing the goods and services we consume.\nTo understand this, consider the total benefits of GHG emissions abatement (i.e., the benefits we get from reducing GHG emissions) and the total costs of GHG emissions abatement.\nReducing emissions by a little is relatively inexpensive (or may even have negative costs). For example, switching from incandescent lightbulbs to LED lightbulbs can save money. As we reduce the cheapest GHG emissions first, we will then have to tackle more expensive emissions reductions elsewhere. Switching from coal to natural gas might reduce emissions relatively cheaply for electricity production. But, switching from natural gas to renewables is more expensive. And, switching from renewables to nuclear power is even more expensive. This means that the total costs of emissions abatement increases the more emissions we abate. As a result, the total abatement cost curve is increasing at an increasing rate (i.e., it is convex).\n\n\n\nFigure 1: Benefits and costs of GHG emissions abatement\n\n\nOn the other hand, reducing emissions by a little bit can generate substantial benefits. The first few billion tons of emissions abated per year might reduce the risk of a catastrophic climate event (e.g., keeping global surface temperatures below, say, 3 degrees). But, as we reduce emissions further, the benefits of additional abatement become smaller (e.g., moving from 2 degrees of warming to 1.5 degrees warming still generates benefits, but fewer than moving from 3.5 to 3 degrees of warming). This means that the total benefits of emissions abatement are increasing at a decreasing rate (i.e., they are concave).\nThe shape of the total benefits curve tells us something about the marginal benefits and marginal costs of emissions abatement because they simply reflect the slope of the total benefit and total cost curves.\n\nMarginal benefits (or demand for emissions abatement) are decreasing in the amount of emissions abated. Demand curves slope downward.\nMarginal costs (or supply of emissions abatement) are increasing in the amount of emissions abated. Supply curves slope upward. See Figure 2 for an example of a marginal abatement cost curve.\n\n\n\n\nFigure 2: A classic example of a GHG marginal abatement cost curve from Mckinsey and Company (Source: https://blogs.edf.org/climate411/2021/08/31/a-revamped-cost-curve-showcases-the-biggest-carbon-cutting-opportunities/)\n\n\nMarkets maximize net benefits because they balance the inherent tradeoff between the benefits of emissions abatement and the costs of doing so. Functionally, net benefits are maximized when the marginal benefits equal marginal costs (i.e., when the demand curve intersects the supply curve), which reflects the we want to find the point of emissions abatement that maximizes the vertical distance between the total cost and total benefit curves.\nMarkets are good at allocating resources when a few conditions are met:\n\nThe market is competitive (i.e., buyers and sellers take prices as given)\nFirms and consumers both have perfect information about product quality\nThe market is complete (i.e., all relevant costs and benefits are borne by participants in the market).\n\nFor our purposes, the last condition is the most important. When markets are incomplete, they fail to account for all relevant costs and benefits. In the case of climate change, the costs of GHG emissions are generally not reflected in the prices we pay for goods and services. As a result, we overproduce and overconsume goods and services that generate GHG emissions."
+  },
+  {
+    "objectID": "1-3-climate-economics.html#markets-and-climate-change",
+    "href": "1-3-climate-economics.html#markets-and-climate-change",
+    "title": "1.3 – why is climate change an economic problem?",
+    "section": "",
+    "text": "Climate change is a massive unpriced externality.\nWhen we fail to account for the social costs of our production and consumption decisions, we tend to overproduce and overconsume.\nMarkets are useful tools because they efficiently allocate scarce resources. What does this mean? Well, markets maximize net surplus by balancing the benefits we get from consumption with the costs of producing the goods and services we consume.\nTo understand this, consider the total benefits of GHG emissions abatement (i.e., the benefits we get from reducing GHG emissions) and the total costs of GHG emissions abatement.\nReducing emissions by a little is relatively inexpensive (or may even have negative costs). For example, switching from incandescent lightbulbs to LED lightbulbs can save money. As we reduce the cheapest GHG emissions first, we will then have to tackle more expensive emissions reductions elsewhere. Switching from coal to natural gas might reduce emissions relatively cheaply for electricity production. But, switching from natural gas to renewables is more expensive. And, switching from renewables to nuclear power is even more expensive. This means that the total costs of emissions abatement increases the more emissions we abate. As a result, the total abatement cost curve is increasing at an increasing rate (i.e., it is convex).\n\n\n\nFigure 1: Benefits and costs of GHG emissions abatement\n\n\nOn the other hand, reducing emissions by a little bit can generate substantial benefits. The first few billion tons of emissions abated per year might reduce the risk of a catastrophic climate event (e.g., keeping global surface temperatures below, say, 3 degrees). But, as we reduce emissions further, the benefits of additional abatement become smaller (e.g., moving from 2 degrees of warming to 1.5 degrees warming still generates benefits, but fewer than moving from 3.5 to 3 degrees of warming). This means that the total benefits of emissions abatement are increasing at a decreasing rate (i.e., they are concave).\nThe shape of the total benefits curve tells us something about the marginal benefits and marginal costs of emissions abatement because they simply reflect the slope of the total benefit and total cost curves.\n\nMarginal benefits (or demand for emissions abatement) are decreasing in the amount of emissions abated. Demand curves slope downward.\nMarginal costs (or supply of emissions abatement) are increasing in the amount of emissions abated. Supply curves slope upward. See Figure 2 for an example of a marginal abatement cost curve.\n\n\n\n\nFigure 2: A classic example of a GHG marginal abatement cost curve from Mckinsey and Company (Source: https://blogs.edf.org/climate411/2021/08/31/a-revamped-cost-curve-showcases-the-biggest-carbon-cutting-opportunities/)\n\n\nMarkets maximize net benefits because they balance the inherent tradeoff between the benefits of emissions abatement and the costs of doing so. Functionally, net benefits are maximized when the marginal benefits equal marginal costs (i.e., when the demand curve intersects the supply curve), which reflects the we want to find the point of emissions abatement that maximizes the vertical distance between the total cost and total benefit curves.\nMarkets are good at allocating resources when a few conditions are met:\n\nThe market is competitive (i.e., buyers and sellers take prices as given)\nFirms and consumers both have perfect information about product quality\nThe market is complete (i.e., all relevant costs and benefits are borne by participants in the market).\n\nFor our purposes, the last condition is the most important. When markets are incomplete, they fail to account for all relevant costs and benefits. In the case of climate change, the costs of GHG emissions are generally not reflected in the prices we pay for goods and services. As a result, we overproduce and overconsume goods and services that generate GHG emissions."
+  },
+  {
+    "objectID": "1-3-climate-economics.html#externalities",
+    "href": "1-3-climate-economics.html#externalities",
+    "title": "1.3 – why is climate change an economic problem?",
+    "section": "externalities",
+    "text": "externalities\nExternalities: An externality results when the actions of one individual (or firm) have a direct, unintentional, and uncompensated effect on the well-being of other individuals or the profits of other firms.\nExternalities can be positive or negative. In the case of GHG emissions, the externality is negative because the costs of emissions are not reflected in the prices we pay for goods and services. This augments our standard demand model when were thinking about, say, the market for gasoline consumption.\n\n\n\nFigure 3: The market for gasoline with externalities\n\n\nConsider Figure 3, the private equilibrium level is \\(Q^{private}\\) and \\(P^{private}\\) where the supply (or private marginal cost) curve and the demand (or private marginal benefit) curve intersect. But, we know gasoline consumption generates externalities. The marginal social cost curve reflects the total costs to society that are associated with gasoline consumption (inclusive of GHG emissions). Those externalities are represented by the vertical difference between the private marginal cost curve and the social marginal cost curve, which is called the marginal external damages of gasoline consumption.\n\nOperating at the privately optimal point of consumption results in deadweight loss to society, which reflects the social welfare loss of failure to incorporate external costs into the price of gasoline. Deadweight loss is the welfare loss borne by people outside of the market.\nIf we were to incorporate the social cost of gasoline consumption into the price of gasoline, the supply curve would shift up by the amount of the marginal external damages. This would result in a new equilibrium level of consumption, \\(Q^{social}\\) and \\(P^{social}\\). At this point, consumers would have to pay more (in this case, 5 dollars per gallon) and suppliers would receive less than \\(P^{private}\\).\nMoving from \\(Q^{private}\\) to \\(Q^{social}\\) would also reduce producer and consumer surplus (the areas shaded in green). This makes sense: consumers are getting fewer benefits from gasoline, and producers are receiving less profit. So, there are “losers” when we move to the socially efficient allocation, despite the fact that society as a whole is better off."
+  },
+  {
+    "objectID": "1-3-climate-economics.html#public-goods",
+    "href": "1-3-climate-economics.html#public-goods",
+    "title": "1.3 – why is climate change an economic problem?",
+    "section": "public goods",
+    "text": "public goods\nOne primary reason that markets fail to account for the social costs of GHG emissions is that GHG mitigation is a public good. If the US were to abate GHG emissions, the benefits would be shared by everyone in the world. But, the costs of abatement would be borne by US citizens. As a result, the US has an incentive to free ride on the efforts of other countries to reduce emissions.\nPublic goods are characterized by two key features:\n\nNon-rivalry: One person’s consumption of the good does not reduce the amount available for others to consume.\nNon-excludability: Others cannot be excluded from consuming the good.\n\nExamples of pure public goods include clean air, national defense, Wikipedia, and so forth.\nPrivate goods are rivalrous and excludable. I can exclude you from consuming my private goods (e.g., the peanut butter and jelly sandwich I eat on most days for lunch). And, if I consume my car, you cannot consume it.\nTwo other classes of goods are relevant for our purposes:\n\nCommon pool resources: Common pool resources are rivalrous but non-excludable. For example, fish in the ocean are rivalrous because if I catch a fish, you cannot catch it. But, the ocean is non-excludable because it is impossible to prevent people from fishing in the ocean.\nClub goods: Club goods are non-rivalrous but excludable. For example, a private park is non-rivalrous because if I am in the park, you can also be in the park. But, the park is excludable because I can prevent you from entering the park.\n\nWhen modeling equilibrium supply of public goods, we need to account for the nonrival nature of public goods. In Figure 4, there are two marginal benefit curves for different people that reflect how much they value trips to a national forest for hiking or camping. Because both people can simultaneously enjoy the national forest, we need to add up their marginal benefits curves vertically to understand the aggregate benefits that each quantity of trips provides.1 This vertical summation results in the social marginal benefit curve.\n\n\n\nFigure 4: Modeling public goods\n\n\nThe supply curve reflects the marginal cost of that the government bears in providing the public good (e.g., trail maintenance, campsite development, and so forth). If the government were to only consider the private marginal benefits of the public good, they might provide \\(Q_b\\), which reflects person B’s demand for trips. But, if the government were to consider the social marginal benefits of the public good, they would provide \\(Q^\\star\\), which reflects the sum of person A and person B’s demand for trips (i.e., the total willingness to pay for trips to the national forest)."
+  },
+  {
+    "objectID": "1-3-climate-economics.html#the-coase-theorem",
+    "href": "1-3-climate-economics.html#the-coase-theorem",
+    "title": "1.3 – why is climate change an economic problem?",
+    "section": "the coase theorem",
+    "text": "the coase theorem\nThe Coase Theorem states that if property rights are well-defined, transaction costs are low, and there aren’t too many parties involved, then private parties can bargain to reach an efficient outcome, regardless of the initial allocation of property rights. This suggests that parties acting in their own self-interest will bargain to achieve the socially optimal solution\nThe Coase Theorem, while potentially powerful in some settings, is unlikely to be useful for addressing climate change. Why? Because the Coase Theorem requires well-defined property rights (who owns the right to emit GHGs into the atmosphere?) and low transaction costs (if, say, a company wanted to emit GHGs as a result of their operations, they would have to compensate all parties affected by their solution)."
+  },
+  {
+    "objectID": "1-3-climate-economics.html#resources-and-further-reading",
+    "href": "1-3-climate-economics.html#resources-and-further-reading",
+    "title": "1.3 – why is climate change an economic problem?",
+    "section": "resources and further reading",
+    "text": "resources and further reading"
+  },
+  {
+    "objectID": "1-3-climate-economics.html#footnotes",
+    "href": "1-3-climate-economics.html#footnotes",
+    "title": "1.3 – why is climate change an economic problem?",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nRecall that when we are dealing with private goods, we add up demand curves horizontally to determine the aggregate demand curve. We do this because of the rivalrous nature of private goods. Only one person can receive the benefits of consuming a single apple. With public goods, this calculus changes because multiple people can enjoy the same quantity of, say, GHG mitigation.↩︎"
+  },
+  {
+    "objectID": "1-4-costs-benefits.html",
+    "href": "1-4-costs-benefits.html",
+    "title": "1.4 – what are the costs and benefits of climate change",
+    "section": "",
+    "text": "Benefit-cost analysis allows us to make decisons on whether we move forward with a project. We make benefit-cost decisions every day, but for climate change, we’re usually interested the actions of a government deciding whether to move forward with a policy that affect GHG emissions. For climate change, we bear costs of reducing emissions in the short run, but the benefits we receive might play out over a longer time horizon.\nThe basic steps for conducting a benefit-cost analysis are as follows:\n\nSet up the framework for analysis (define alternatives & baseline [i.e., “doing nothing”])\nDecide whose costs & benefits should be recognized\nIdentify and categorize costs & benefits\nProject costs and benefits over the life of each alternative\nMonetize costs and benefits (List benefits/costs that cannot be quantified)\nCompute net present value of benefits and costs\nPerform sensitivity analysis\n\nWhen thinking about benefits, we want to consider both impacts to market goods (e.g., climate impacts on agricultural yields) as well as non-market goods (e.g., heat-related mortality, reduced air pollution). Economists have developed several tools to monetize non-market goods. This monetization step is important because if we cannot monetize a benefit, we cannot include the value of that benefit in our benefit-cost analysis."
+  },
+  {
+    "objectID": "1-4-costs-benefits.html#benefit-cost-analysis",
+    "href": "1-4-costs-benefits.html#benefit-cost-analysis",
+    "title": "1.4 – what are the costs and benefits of climate change",
+    "section": "",
+    "text": "Benefit-cost analysis allows us to make decisons on whether we move forward with a project. We make benefit-cost decisions every day, but for climate change, we’re usually interested the actions of a government deciding whether to move forward with a policy that affect GHG emissions. For climate change, we bear costs of reducing emissions in the short run, but the benefits we receive might play out over a longer time horizon.\nThe basic steps for conducting a benefit-cost analysis are as follows:\n\nSet up the framework for analysis (define alternatives & baseline [i.e., “doing nothing”])\nDecide whose costs & benefits should be recognized\nIdentify and categorize costs & benefits\nProject costs and benefits over the life of each alternative\nMonetize costs and benefits (List benefits/costs that cannot be quantified)\nCompute net present value of benefits and costs\nPerform sensitivity analysis\n\nWhen thinking about benefits, we want to consider both impacts to market goods (e.g., climate impacts on agricultural yields) as well as non-market goods (e.g., heat-related mortality, reduced air pollution). Economists have developed several tools to monetize non-market goods. This monetization step is important because if we cannot monetize a benefit, we cannot include the value of that benefit in our benefit-cost analysis."
+  },
+  {
+    "objectID": "1-4-costs-benefits.html#valuing-mortality-risk",
+    "href": "1-4-costs-benefits.html#valuing-mortality-risk",
+    "title": "1.4 – what are the costs and benefits of climate change",
+    "section": "valuing mortality risk",
+    "text": "valuing mortality risk\nOften, one of the biggest benefits of any environmental regulation is the reduction in deaths that result from environmental pollution. Climate change is no different. Climate change will increase the frequency and intensity of heat waves, tropical cyclones, drought (which can lead to crop failure and food insecurity), forest fires, and so forth. These events will increase the risk of death for people around the world. Reducing GHG emissions will reduce the risk of these events, which will reduce the risk of death. One way to value that benefit is to use the value of a statistical life (VSL) (also known as the value of mortality risk reductions). The VSL is the amount of money that a person is willing to pay to reduce their risk of death by a small amount. The way it is calculated is as follows. Imagine gathering 100,000 people. Then, ask each of them how much they would be willing to pay to reduce their risk of death by 1 in 100,000 that year.1 If the average person is willing to pay $100 for a reducing the risk of death by 0.001%, then we would multiply the average person’s willingness to pay by 100,000 to arrive at a VSL estimate of $10,000,000. This value is approximately the current value used by the US government to value mortality risk reductions."
+  },
+  {
+    "objectID": "1-4-costs-benefits.html#present-value",
+    "href": "1-4-costs-benefits.html#present-value",
+    "title": "1.4 – what are the costs and benefits of climate change",
+    "section": "present value",
+    "text": "present value\nWhen adding up costs and benefits that accrue over time, we need to compare them on equal footing. To do that, we find the present value of future costs and benefits. The present value of a future payment is the amount of money that would need to be invested today at a given interest rate to yield that future payment.\nWe calculate the PV of a single value in the future using the following formula:\n\\[PV(b) = \\frac{b}{(1 + r)^t}\\]\nwhere \\(b\\) is the future value of the payment, \\(r\\) is the discount rate, and \\(t\\) is the number of years until the payment is received. The higher the discount rate, the lower the present value of money in the future.\nWe can also calculate the PV of a stream of future benefits using the following formula:\n\\[PV(b_t) = \\sum_{t=1}^T \\frac{b_t}{(1 + r)^t}\\]\nwhere \\(b_t\\) is the amount of benefits received in each year \\(t\\) and \\(T\\) is the total number of years over which benefits are received. This is the same as the single period formula, but we repeat that formula for each year benefits accrue.\nNote, you can also calculate the PV of a stream of future costs using a “continuous time” version of the formula:\n\\[PV(b_t) = b_t \\exp(-rt)\\]\nThe basic idea behind discounting is that we are impatient. We would prefer to receive money now, rather than in the future. So, we discount future benefits and costs to reflect our degree of impatience. This idea stems from the fact that we can earn interest on money today. With a 5% interest rate, we should be indifferent between $100 today and $105 a year from now, because we could invest that $100 and earn $5 of interest payments in one year. Discounting just reverses that same idea. Nominal dollar amounts received in the future will be worth less than nominal dollar amounts received today."
+  },
+  {
+    "objectID": "1-4-costs-benefits.html#resources-and-further-reading",
+    "href": "1-4-costs-benefits.html#resources-and-further-reading",
+    "title": "1.4 – what are the costs and benefits of climate change",
+    "section": "resources and further reading",
+    "text": "resources and further reading\n\nEPA’s guidelines for preparing benefit-cost analysis\nEPA’s guidelines for valuing mortality risk reductions"
+  },
+  {
+    "objectID": "1-4-costs-benefits.html#footnotes",
+    "href": "1-4-costs-benefits.html#footnotes",
+    "title": "1.4 – what are the costs and benefits of climate change",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nNote that 1 in 100,000 is approximately the risk of death from a general anasthetic.↩︎"
+  },
+  {
+    "objectID": "1-5-discounting.html",
+    "href": "1-5-discounting.html",
+    "title": "1.5 – should i care about my grandchildren’s future?",
+    "section": "",
+    "text": "One of the fundamental challenges of valuing climate impacts is that the benefits of GHG mitigation accrue over centuries. Some of those benefits will be enjoyed by the current generation, while others will be enjoyed by future generations. How should we value benefits to future generations?\nThere are two primary approaches to valuing benefits to future generations:\n\nThe descriptive approach states that We should invest resources according real market rates of return. Taking $50M and investing in climate mitigation might earn very little or no return. Investing that same $50M in financial markets might earn 3-10% returns per year. Therefore, discount rates should be determined by the opportunity cost of capital investments.\nThe prescriptive approach states that it is unethical to “discount” the welfare of future generations, so we should use a very low discount rate (e.g., 1% or even 0%). It is important to distinguish discount rates on goods vs. discount rates on welfare of future generations. Future generations will (very likely) be wealthier than us, so we might want to value consumption in our relatively poor generation more heavily than consumption in the future (even if we value future generations’ welfare equally)"
+  },
+  {
+    "objectID": "1-5-discounting.html#discounting",
+    "href": "1-5-discounting.html#discounting",
+    "title": "1.5 – should i care about my grandchildren’s future?",
+    "section": "",
+    "text": "One of the fundamental challenges of valuing climate impacts is that the benefits of GHG mitigation accrue over centuries. Some of those benefits will be enjoyed by the current generation, while others will be enjoyed by future generations. How should we value benefits to future generations?\nThere are two primary approaches to valuing benefits to future generations:\n\nThe descriptive approach states that We should invest resources according real market rates of return. Taking $50M and investing in climate mitigation might earn very little or no return. Investing that same $50M in financial markets might earn 3-10% returns per year. Therefore, discount rates should be determined by the opportunity cost of capital investments.\nThe prescriptive approach states that it is unethical to “discount” the welfare of future generations, so we should use a very low discount rate (e.g., 1% or even 0%). It is important to distinguish discount rates on goods vs. discount rates on welfare of future generations. Future generations will (very likely) be wealthier than us, so we might want to value consumption in our relatively poor generation more heavily than consumption in the future (even if we value future generations’ welfare equally)"
+  },
+  {
+    "objectID": "1-5-discounting.html#the-social-discount-rate",
+    "href": "1-5-discounting.html#the-social-discount-rate",
+    "title": "1.5 – should i care about my grandchildren’s future?",
+    "section": "the social discount rate",
+    "text": "the social discount rate\nThe social discount rate is the rate at which society discounts future benefits and costs. One useful tool for thinking about the social discount rate is the Ramsey equation. The Ramsey equaion is defined as follows:\n\\[ r = \\delta + \\eta g\\]\nwhere:\n\n\\(r\\) is the social discount rate\n\\(\\delta\\) is the pure rate of time preference (e.g., our degree of impatience)\n\nThis term governs how consumers discount utility over time. Higher \\(\\delta\\) raises marginal benefit of consuming now. Think of this as impatience.\nIf you weight future generations’ welfare the same as today, you’d set \\(\\delta = 0\\).\nReasonable values of \\(\\delta\\) typically fall between 0% and 2%.\n\n\\(\\eta\\) is the elasticity of marginal utility of consumption\n\nA.K.A.: the coefficient of relative risk aversion or intergenerational inequality aversion\nGoverns how much we value an additional dollar as society grows wealthier. As \\(\\eta\\) increases, the more we dislike inequality, which means we value today’s consumption more strongly.\nReasonable values of \\(\\eta\\) typically fall between 1 and 4.\n\n\\(g\\) is the expected growth rate of consumption per capita\n\nLong-run economic growth rates typically fall between 1% and 3% per year."
+  },
+  {
+    "objectID": "1-5-discounting.html#what-social-discount-rate-should-we-use",
+    "href": "1-5-discounting.html#what-social-discount-rate-should-we-use",
+    "title": "1.5 – should i care about my grandchildren’s future?",
+    "section": "what social discount rate should we use?",
+    "text": "what social discount rate should we use?\nChoosing a value for the social discount rate is a tricky business that can be informed just as much by ethics and philosophy as it can by economics.\n\nThe federal government typically uses two discount rates for benefit-cost analysis: 3% and 7%. The 3% rate is used to reflect the opportunity cost of consumption, while the 7% rate is used to reflect the opportunity cost of capital investment.\nAlternative rationales depend on moral or ethical considerations in choosing the parameters for the Ramsey equation. The 2007 Stern Review on the Economics of Climate Change used a social discount rate of 1.4%. These choices were made to reflect the following:\n\n\\(\\delta=0.1\\%\\) reflects the idea that we should value future generations’ welfare almost equally to our own.\n\\(\\eta=1\\) reflects the idea that we should value an additional dollar of consumption equally, regardless of how wealthy we are.\n\\(g=1.3\\%\\) reflects the idea that we expect consumption per capita to grow at 1.3% per year.\n\nThe choice of \\(\\eta=1\\) was particularly conversial. Many economists believe that \\(\\eta\\) should be larger than 1, which would imply that we should value an additional dollar of consumption more highly as we become wealthier. This would imply that we should use a higher discount rate."
+  },
+  {
+    "objectID": "1-5-discounting.html#uncertainty-and-the-discount-rate",
+    "href": "1-5-discounting.html#uncertainty-and-the-discount-rate",
+    "title": "1.5 – should i care about my grandchildren’s future?",
+    "section": "uncertainty and the discount rate",
+    "text": "uncertainty and the discount rate\nProjecting future costs and benefits is inherently uncertain. When using the Ramsey equation, we need to make assumptions about the growth rate of consumption per capita over centuries. When focused on a descriptive approach, the discount rate might reflect changes in interests rates that may be driven by uncertain future monetary policy.\n\nUncertainty in the discount rate provides justification for using a lower discount rate."
+  },
+  {
+    "objectID": "1-5-discounting.html#importance-of-the-discount-rate",
+    "href": "1-5-discounting.html#importance-of-the-discount-rate",
+    "title": "1.5 – should i care about my grandchildren’s future?",
+    "section": "importance of the discount rate",
+    "text": "importance of the discount rate\nThe choice of the social discount rate is one of the most influential components for understanding the costs and benefits of climate change. Because discounting compounds values over time, and GHG mitigation generates benefits over a long time horizon, small changes in the discount rate can have large impacts on the present value of future benefits.\nImagine receiving a benefit of $1 million in 100 years.\n\nAt a 2% discount rate, the PV of that benefit is ~$138,000.\nAt a 3% discount rate, the PV of that benefit is ~$52,000.\nAt a 7% discount rate, the PV of that benefit is ~$1150.\n\nIf the cost of achieving that benefit were $100,000 today, it is easy to see how the project makes sense at a 2% discount rate, but not at a 3% or 7% discount rate."
+  },
+  {
+    "objectID": "1-5-discounting.html#resources-and-further-reading",
+    "href": "1-5-discounting.html#resources-and-further-reading",
+    "title": "1.5 – should i care about my grandchildren’s future?",
+    "section": "resources and further reading",
+    "text": "resources and further reading\n\nArrow et al., 2003. “Determining Benefits and Costs for Future Generations”, Science."
+  },
+  {
+    "objectID": "1-6-climate-damages.html",
+    "href": "1-6-climate-damages.html",
+    "title": "1.6 – can we put a price on climate impacts?",
+    "section": "",
+    "text": "We have established that GHG emissions are a negative externality, so private and social marginal cost curves will differ by an amount known as marginal external damages. This divergence results in overconsumption and overproduction of goods and services that generate GHG emissions. But, how do we know by how much the private and social marginal cost curves differ? In other words, how do we know the magnitude of marginal external damages?"
+  },
+  {
+    "objectID": "1-6-climate-damages.html#the-social-cost-of-carbon-scc",
+    "href": "1-6-climate-damages.html#the-social-cost-of-carbon-scc",
+    "title": "1.6 – can we put a price on climate impacts?",
+    "section": "the social cost of carbon (SCC)",
+    "text": "the social cost of carbon (SCC)\nThe social cost of carbon (SCC) (a.k.a. social cost of GHG emissions or social cost of \\(CO_2\\)) is a measure of the economic damages that would result from emitting one additional ton of \\(CO_2\\) (or GHGs) into the atmosphere. The SCC is intended to capture the total present value of the stream of damages that arise from emitting an additional ton of \\(CO_2\\) in a particular year. The SCC is typically expressed in dollars per ton of \\(CO_2\\) emitted. The federal government has used a value of roughly $51/ton in recent history (with some notable changes across political administrations).\nIt is important to distinguish climate impacts from climate damages:\n\nClimate impacts are the physical changes to the climate system that result from GHG emissions. For example, the melting of glaciers, the increase in global surface temperature, the increase in sea level, and so forth.\nClimate damages are the monetized economic costs that result from climate impacts. For example, declines in agricultural productivity, damages to coastal property, the loss of human life, and so forth.\n\nThe way to use the SCC is straightforward. Imagine a regulation is predicted to reduce GHG emissions by 10,000 tons. We can multiply that reduction in emissions by the SCC to arrive at the total present value of the damages that are avoided by reducing emissions (e.g., $51/ton \\(\\times\\) 10,000 tons). This estimate is the monetized economic benefits of reducing 10,000 tons of GHG emissions."
+  },
+  {
+    "objectID": "1-6-climate-damages.html#history-of-the-scc",
+    "href": "1-6-climate-damages.html#history-of-the-scc",
+    "title": "1.6 – can we put a price on climate impacts?",
+    "section": "history of the SCC",
+    "text": "history of the SCC\nOne might think that it would be obvious to incorporate climate damages into the costs and benefits of federal regulations, but this has not been the case. Here’s a rough history of the SCC as it has been used in federal regulatory policy in the US:\n\n1990s & 2000s: Indepedent researchers develop models to assess the economic costs of climate change.\n2008: Federal appeals court ruled that federal agencies must monetize climate-related benefits in regulatory impact analyses (RIAs).\n2010: Interagency Working Group (IWG) created to harmonize estimates of the SCC across federal agencies. First systematic SCC estimates provided by the IWG\n\n\\(\\implies\\) SCC = $26/ton in 2020 at 3% discount rate.\n\n2013-2016: Updates to modeling process leading to revised SCC estimates -\n\n\\(\\implies\\) SCC = $42/ton in 2020 at 3% discount rate in $2007\n\nJan. 2017: National Academies of Sciences’ study provides guidance on how the SCC should be updated to reflect the best available science.\nMar. 2017: Trump executive order (EO-13783) disbands IWG. Citing OMB’s Circular A-4, directs agencies to use 7% discount rates and ignore climate damages outside the US.\n\n\\(\\implies\\) SCC = $1/ton at 7% discount rate\n\n2021: Biden executive order (EO-13990) reverses Trump EO, re-establishes the IWG and previous SCC estimate, and calls for more comprehensive update.\n\n\\(\\implies\\) SCC = $51/ton in 2020 at 3% discount rate in $2020\n\n2022: Research teams provide updated SCC estimates to reflect best available evidence."
+  },
+  {
+    "objectID": "1-6-climate-damages.html#how-is-the-scc-calculated",
+    "href": "1-6-climate-damages.html#how-is-the-scc-calculated",
+    "title": "1.6 – can we put a price on climate impacts?",
+    "section": "how is the SCC calculated?",
+    "text": "how is the SCC calculated?\nThe SCC is calculated using integrated assessment models (IAMs). IAMs are models that integrate climate science, economics, and other disciplines to project the impacts of climate change and the economic costs of those impacts. IAMs are used to project the SCC because they allow us to project the economic damages that result from climate change. IAMs, like all models, are necessarily simplifications of the real world that are intended to capture key features of the climate and economic systems.\n\n\n\nFigure 1: Schematic of the SCC estimation process (Source: RFF)\n\n\nThe SCC estimation process is as follows:\n\nProject GDP, population, and the associated GHG emissions into the future (~300 years). These are called “socioeconomic scenarios” (i.e., different representations of what the world might look like in the future).\nProject changes to the physical climate system resulting from GHG emissions (e.g., changes in temperature, sea-level rise, ocean acidification, etc.).\nEstimate the economic damages that result from climate impacts.\nDiscount future damages to the present day.\nRepeat steps 1-4 in a “perturbed” scenario that adds a “\\(CO_2\\) pulse” into the climate system at a particular point in time.\nCalculate the present value of the difference in total damages between the perturbed and unperturbed scenarios. Rescale estimate to dollars per ton of \\(CO_2\\). This is an estimate of the SCC."
+  },
+  {
+    "objectID": "1-6-climate-damages.html#damage-functions",
+    "href": "1-6-climate-damages.html#damage-functions",
+    "title": "1.6 – can we put a price on climate impacts?",
+    "section": "damage functions",
+    "text": "damage functions\nThe damage function is a key component of IAMs. The damage function is a mathematical representation of the relationship between climate impacts and economic damages. The damage function is often expressed as a percentage of GDP. For example, a damage function might state that a 1 degree increase in global surface temperature will reduce global GDP by 1%.\nAn example of a damage function is shown in Figure 2. This damage function is from Burke, Hsiang, & Miguel (2015) and shows the relationship between temperature and GDP per capita. The damage function is estimated using a regression model that relates temperature to GDP per capita. The figure compares the estimated damage function to previous estimates of climate damages from three influential IAMs (DICE, FUND, and Page). Depending on modeling assumptions, what’s included in the model, and so forth, the damage function can vary substantially across IAMs. Naturally, these choices can have a dramatic influence on the SCC.\n\n\n\nFigure 2: Example of a damage function (Source: Burke, Hsiang, & Miguel (2015))"
+  },
+  {
+    "objectID": "1-6-climate-damages.html#empirical-evidence-of-climate-damages",
+    "href": "1-6-climate-damages.html#empirical-evidence-of-climate-damages",
+    "title": "1.6 – can we put a price on climate impacts?",
+    "section": "empirical evidence of climate damages",
+    "text": "empirical evidence of climate damages\nA recent wave of research has focused on how economic outcomes respond to changes in weather, and then they use that estimated relationship to project how those outcomes will change in the future with climate change. This approach is used to estimate weather response functions. A simplified example of a weather-response function looks like this:\n\\[\ny = f(T)\n\\]\nwhere \\(y\\) is some economic outcome (e.g., agricultural yields, labor productivity, electricity use, etc.) and \\(T\\) is some measure of weather (e.g., average temperature), and \\(f()\\) represents the shape of the relationship between weather and the economic outcome (e.g., electricity use might be quadratic in temperature because people use more electricity when it is very hot and very cold, but less electricity when it is mild).\nThese econometric weather-response functions can be useful tools to understanding how weather affects economic outcomes. But, there is (somewhat) limited ability for using historical data to understand how society will adapt to climate change. Adaptation would change the shape of \\(f()\\). If \\(y\\) is heat-related mortality, then the shape of \\(f()\\) might change as we society uses more air conditioning. That is, put simply, the relationship between temperature and mortality might be different in the future than it is today.\nWe can use some “cross-sectional” comparisons (i.e., giving the US Mexico’s climate) to understand how \\(f()\\) might change but these comparisons are limited because we cannot control for all of the other differences between the US and Mexico.\nMoreover, we can only estimate the relationship between temperature and outcomes for which we have good data. Certain outcomes, including a lot of non-market impacts of climate change, do not have good data precisely because they are not traded in markets."
+  },
+  {
+    "objectID": "1-6-climate-damages.html#current-estimates-of-the-scc",
+    "href": "1-6-climate-damages.html#current-estimates-of-the-scc",
+    "title": "1.6 – can we put a price on climate impacts?",
+    "section": "current estimates of the SCC",
+    "text": "current estimates of the SCC\n\n\n\nFigure 3: Recent estimates of the SCC from Rennert et al. (2022)\n\n\nRecent estimates of the SCC that reflect the “best available science” are presented in Figure 3. The preferred estimate is $185/ton and uses a 2% discount rate. This estimate is substantially larger than the $51/ton estimate previously used by the federal government. Part of this difference is due to the fact that the new estimate uses a 2% discount rate, while the previous estimate used a 3% discount rate. But, the new estimate also incorporates new evidence on climate damages and updated socioeconomic scenarios. Notably, the only damage sectors considered in the Rennert et al. (2022) study are agriculture, energy expenditures, sea-level rise, and heat-related mortality."
+  },
+  {
+    "objectID": "1-6-climate-damages.html#resources-and-further-reading",
+    "href": "1-6-climate-damages.html#resources-and-further-reading",
+    "title": "1.6 – can we put a price on climate impacts?",
+    "section": "resources and further reading",
+    "text": "resources and further reading\n\nAuffhammer, 2018. “Quantifying Economic Damages from Climate Change”, Journal of Economic Perspectives.\nSocial Cost of Carbon Explorer, Resources for the Future.\nEPA External Review Draft of Report on the Social Cost of Greenhouse Gases: Estimates Incorporating Recent Scientific Advances"
+  },
+  {
+    "objectID": "1-7-climate-burdens.html",
+    "href": "1-7-climate-burdens.html",
+    "title": "1.7 – who bears the burden of climate impacts?",
+    "section": "",
+    "text": "It is not surprising that climate change will have different impacts in different parts of the world. But, it is perhaps surprising that climate change is expected to benefit some countries (particularly wealthy, colder countries like Canada and countries in Northern Europe). This fact is one reason why it is difficult to reach international agreements on climate change mitigation (e.g., Russia might benefit from climate change, so has little incentive to reduce emissions and encourage other countries to do the same).\nFigure 1 demonstrates a fundamental issue with climate change: the countries that are responsible for the majority of GHG emissions are not the countries that will bear the brunt of climate impacts. This figure shows the country-specific SCC (vertical axis) against the share of global GHG emissions for each country (horizontal axis). The US was responsible for roughly 15% of global GHG emissions in 2013, but the SCC for the US is roughly 12% of the global SCC. This means that emissions and damages are approximately proportional (note, however, that the US has a much greater share of historical emissions). China is responsible for roughly 30% of global GHG emissions in 2013, but the SCC for China is roughly 5% of the global SCC. This means that China is responsible for a disproportionate share of global emissions, but will bear a relatively small share of the global damages. India, on the other hand, is responsible for roughly 7% of global GHG emissions, but the SCC for India is more than 20% of the global SCC. This means that India will be disproportionately impacted by climate change despite its share of global emissions.\n\n\n\nFigure 1: Country-specific SCC vs. share of global emissions (Source: Ricke et al. (2018))"
+  },
+  {
+    "objectID": "1-7-climate-burdens.html#global-inequality-in-climate-impacts",
+    "href": "1-7-climate-burdens.html#global-inequality-in-climate-impacts",
+    "title": "1.7 – who bears the burden of climate impacts?",
+    "section": "",
+    "text": "It is not surprising that climate change will have different impacts in different parts of the world. But, it is perhaps surprising that climate change is expected to benefit some countries (particularly wealthy, colder countries like Canada and countries in Northern Europe). This fact is one reason why it is difficult to reach international agreements on climate change mitigation (e.g., Russia might benefit from climate change, so has little incentive to reduce emissions and encourage other countries to do the same).\nFigure 1 demonstrates a fundamental issue with climate change: the countries that are responsible for the majority of GHG emissions are not the countries that will bear the brunt of climate impacts. This figure shows the country-specific SCC (vertical axis) against the share of global GHG emissions for each country (horizontal axis). The US was responsible for roughly 15% of global GHG emissions in 2013, but the SCC for the US is roughly 12% of the global SCC. This means that emissions and damages are approximately proportional (note, however, that the US has a much greater share of historical emissions). China is responsible for roughly 30% of global GHG emissions in 2013, but the SCC for China is roughly 5% of the global SCC. This means that China is responsible for a disproportionate share of global emissions, but will bear a relatively small share of the global damages. India, on the other hand, is responsible for roughly 7% of global GHG emissions, but the SCC for India is more than 20% of the global SCC. This means that India will be disproportionately impacted by climate change despite its share of global emissions.\n\n\n\nFigure 1: Country-specific SCC vs. share of global emissions (Source: Ricke et al. (2018))"
+  },
+  {
+    "objectID": "1-7-climate-burdens.html#resources-and-further-reading",
+    "href": "1-7-climate-burdens.html#resources-and-further-reading",
+    "title": "1.7 – who bears the burden of climate impacts?",
+    "section": "resources and further reading",
+    "text": "resources and further reading\n\nRicke et al, 2018. “Country-level social cost of carbon,” Nature Climate Change."
+  },
+  {
+    "objectID": "2-1-econ-climate-solutions.html",
+    "href": "2-1-econ-climate-solutions.html",
+    "title": "2.1 – how would an economist solve climate change?",
+    "section": "",
+    "text": "Climate change is a “missing markets” problem. As a result, economists tend to prefer market-based solutions. Two primary market-based solutions are carbon taxes and cap-and-trade systems. Both of these solutions are based on the idea of putting a price on carbon emissions. The idea is that if we put a price on carbon emissions, then firms will emit less carbon. This is because emitting carbon will become more expensive, and people will demand less of carbon-intensive goods and services and firms will be less interested in producing them."
   }
 ]
