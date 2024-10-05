@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -61,6 +95,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -108,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./1-4-costs-benefits.html" rel="" target="">
- <span class="dropdown-text">1.4 – what are the costs and benefits of climate change</span></a>
+ <span class="dropdown-text">1.4 – how do we measure the costs and benefits of climate change?</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./1-5-discounting.html" rel="" target="">
@@ -152,11 +188,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#discounting" id="toc-discounting" class="nav-link active" data-scroll-target="#discounting">discounting</a></li>
+  <li><a href="#discounting-basics" id="toc-discounting-basics" class="nav-link active" data-scroll-target="#discounting-basics">discounting basics</a></li>
+  <li><a href="#approaches-to-discounting" id="toc-approaches-to-discounting" class="nav-link" data-scroll-target="#approaches-to-discounting">approaches to discounting</a></li>
   <li><a href="#the-social-discount-rate" id="toc-the-social-discount-rate" class="nav-link" data-scroll-target="#the-social-discount-rate">the social discount rate</a></li>
   <li><a href="#what-social-discount-rate-should-we-use" id="toc-what-social-discount-rate-should-we-use" class="nav-link" data-scroll-target="#what-social-discount-rate-should-we-use">what social discount rate should we use?</a></li>
   <li><a href="#uncertainty-and-the-discount-rate" id="toc-uncertainty-and-the-discount-rate" class="nav-link" data-scroll-target="#uncertainty-and-the-discount-rate">uncertainty and the discount rate</a></li>
-  <li><a href="#importance-of-the-discount-rate" id="toc-importance-of-the-discount-rate" class="nav-link" data-scroll-target="#importance-of-the-discount-rate">importance of the discount rate</a></li>
   <li><a href="#resources-and-further-reading" id="toc-resources-and-further-reading" class="nav-link" data-scroll-target="#resources-and-further-reading">resources and further reading</a></li>
   </ul>
 </nav>
@@ -183,18 +219,136 @@ ul.task-list li input[type="checkbox"] {
 
 <!-- ## key concepts
  -->
-<section id="discounting" class="level2">
-<h2 class="anchored" data-anchor-id="discounting">discounting</h2>
+<section id="discounting-basics" class="level2">
+<h2 class="anchored" data-anchor-id="discounting-basics">discounting basics</h2>
+<p>The choice of the social discount rate is one of the most influential components for understanding the costs and benefits of climate change. Because discounting compounds values over time, and GHG mitigation generates benefits over a long time horizon, small changes in the discount rate can have large impacts on the present value of future benefits.</p>
+<p>As a reminder, the present value (PV) of a future value is calculated as: <span class="math display">\[PV(b) = \frac{b}{(1 + r)^t}\]</span> where <span class="math inline">\(b\)</span> is the nominal value, <span class="math inline">\(r\)</span> is the discount rate, and <span class="math inline">\(t\)</span> is the number of years until the payment is received.</p>
+<p>Imagine receiving a benefit of $1 million in 100 years.</p>
+<ul>
+<li>At a 2% discount rate, the PV of that benefit is ~$138,000.</li>
+<li>At a 3% discount rate, the PV of that benefit is ~$52,000.</li>
+<li>At a 7% discount rate, the PV of that benefit is ~$1150.</li>
+</ul>
+<p>If the cost of achieving that benefit were $100,000 today, it is easy to see how the project makes sense at a 2% discount rate, but not at a 3% or 7% discount rate.</p>
+<p>In the interactive calculator below, choose a value and a time horizon in years to see how the discount rate affects the present value of a benefit received in the future.</p>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" data-startfrom="36" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 35;"><span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>viewof discountRate <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="fl">0.1</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="fl">0.025</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.005</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"discount rate"</span>})<span class="op">;</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>viewof timeHorizon <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1</span><span class="op">,</span> <span class="dv">300</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">300</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"time horizon (years)"</span>})<span class="op">;</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>viewof initialValue <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1000</span><span class="op">,</span> <span class="dv">100000</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">1000</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"initial value"</span>})<span class="op">;</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>discountedValue <span class="op">=</span> {</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> t <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> t <span class="op">&lt;=</span> timeHorizon<span class="op">;</span> t<span class="op">++</span>) {</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> discounted <span class="op">=</span> initialValue <span class="op">/</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">pow</span>(<span class="dv">1</span> <span class="op">+</span> discountRate<span class="op">,</span> t)<span class="op">;</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    data<span class="op">.</span><span class="fu">push</span>({<span class="dt">year</span><span class="op">:</span> t<span class="op">,</span> <span class="dt">value</span><span class="op">:</span> discounted})<span class="op">;</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> data<span class="op">;</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>chart <span class="op">=</span> {</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> width <span class="op">=</span> <span class="dv">600</span><span class="op">,</span> height <span class="op">=</span> <span class="dv">400</span><span class="op">;</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> svg <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;svg width=</span><span class="sc">${</span>width<span class="sc">}</span><span class="vs"> height=</span><span class="sc">${</span>height<span class="sc">}</span><span class="vs">&gt;&lt;/svg&gt;`</span><span class="op">;</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> margin <span class="op">=</span> {<span class="dt">top</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span> <span class="dt">right</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span> <span class="dt">bottom</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span> <span class="dt">left</span><span class="op">:</span> <span class="dv">40</span>}<span class="op">;</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> x <span class="op">=</span> d3<span class="op">.</span><span class="fu">scaleLinear</span>()</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">domain</span>([<span class="dv">0</span><span class="op">,</span> timeHorizon])</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">range</span>([margin<span class="op">.</span><span class="at">left</span><span class="op">,</span> width <span class="op">-</span> margin<span class="op">.</span><span class="at">right</span>])<span class="op">;</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> y <span class="op">=</span> d3<span class="op">.</span><span class="fu">scaleLinear</span>()</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">domain</span>([<span class="dv">0</span><span class="op">,</span> initialValue])</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">nice</span>()</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">range</span>([height <span class="op">-</span> margin<span class="op">.</span><span class="at">bottom</span><span class="op">,</span> margin<span class="op">.</span><span class="at">top</span>])<span class="op">;</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> xAxis <span class="op">=</span> (g) <span class="kw">=&gt;</span> g</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"transform"</span><span class="op">,</span> <span class="vs">`translate(0,</span><span class="sc">${</span>height <span class="op">-</span> margin<span class="op">.</span><span class="at">bottom</span><span class="sc">}</span><span class="vs">)`</span>)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">call</span>(d3<span class="op">.</span><span class="fu">axisBottom</span>(x)<span class="op">.</span><span class="fu">ticks</span>(width <span class="op">/</span> <span class="dv">80</span>)<span class="op">.</span><span class="fu">tickSizeOuter</span>(<span class="dv">0</span>))<span class="op">;</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> yAxis <span class="op">=</span> (g) <span class="kw">=&gt;</span> g</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"transform"</span><span class="op">,</span> <span class="vs">`translate(</span><span class="sc">${</span>margin<span class="op">.</span><span class="at">left</span><span class="sc">}</span><span class="vs">,0)`</span>)</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">call</span>(d3<span class="op">.</span><span class="fu">axisLeft</span>(y))<span class="op">;</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> line <span class="op">=</span> d3<span class="op">.</span><span class="fu">line</span>()</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">x</span>(d <span class="kw">=&gt;</span> <span class="fu">x</span>(d<span class="op">.</span><span class="at">year</span>))</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">y</span>(d <span class="kw">=&gt;</span> <span class="fu">y</span>(d<span class="op">.</span><span class="at">value</span>))<span class="op">;</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>  d3<span class="op">.</span><span class="fu">select</span>(svg)<span class="op">.</span><span class="fu">selectAll</span>(<span class="st">"*"</span>)<span class="op">.</span><span class="fu">remove</span>()<span class="op">;</span> <span class="co">// clear previous render</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> g <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(svg)</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"g"</span>)<span class="op">;</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>  g<span class="op">.</span><span class="fu">append</span>(<span class="st">"g"</span>)<span class="op">.</span><span class="fu">call</span>(xAxis)<span class="op">;</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>  g<span class="op">.</span><span class="fu">append</span>(<span class="st">"g"</span>)<span class="op">.</span><span class="fu">call</span>(yAxis)<span class="op">;</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>  g<span class="op">.</span><span class="fu">append</span>(<span class="st">"path"</span>)</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">datum</span>(discountedValue)</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill"</span><span class="op">,</span> <span class="st">"none"</span>)</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"stroke"</span><span class="op">,</span> <span class="st">"steelblue"</span>)</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"stroke-width"</span><span class="op">,</span> <span class="fl">1.5</span>)</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"d"</span><span class="op">,</span> line)<span class="op">;</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> svg<span class="op">;</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="approaches-to-discounting" class="level2">
+<h2 class="anchored" data-anchor-id="approaches-to-discounting">approaches to discounting</h2>
 <p>One of the fundamental challenges of valuing climate impacts is that the benefits of GHG mitigation accrue over centuries. Some of those benefits will be enjoyed by the current generation, while others will be enjoyed by future generations. How should we value benefits to future generations?</p>
 <p>There are two primary approaches to valuing benefits to future generations:</p>
 <ul>
-<li><p>The <strong>descriptive approach</strong> states that We should invest resources according real market rates of return. Taking $50M and investing in climate mitigation might earn very little or no return. Investing that same $50M in financial markets might earn 3-10% returns per year. Therefore, discount rates should be determined by the opportunity cost of capital investments.</p></li>
-<li><p>The <strong>prescriptive approach</strong> states that it is unethical to “discount” the welfare of future generations, so we should use a very low discount rate (e.g., 1% or even 0%). It is important to distinguish discount rates on goods vs.&nbsp;discount rates on welfare of future generations. Future generations will (very likely) be wealthier than us, so we might want to value consumption in our relatively poor generation more heavily than consumption in the future (even if we value future generations’ welfare equally)</p></li>
+<li><p>The <strong>descriptive (or opportunity-cost) approach</strong> states that We should invest resources according real market rates of return. Taking $50M and investing in climate mitigation has an opportunity cost because we could take that money and invest it in other projects. Investing that same $50M in financial markets might earn, say, 5% returns per year. Therefore, discount rates should be determined by the opportunity cost of capital investments.</p></li>
+<li><p>The <strong>prescriptive (or normative) approach</strong> states that it is unethical to “discount” the welfare of future generations, so we should use a very low discount rate (e.g., 1% or even 0%). It is important to distinguish discount rates on goods vs.&nbsp;discount rates on welfare of future generations. Future generations will (very likely) be wealthier than us, so we might want to value consumption in our relatively poor generation more heavily than consumption in the future (even if we value future generations’ welfare equally)</p></li>
 </ul>
 </section>
 <section id="the-social-discount-rate" class="level2">
 <h2 class="anchored" data-anchor-id="the-social-discount-rate">the social discount rate</h2>
-<p>The <strong>social discount rate</strong> is the rate at which society discounts future benefits and costs. One useful tool for thinking about the social discount rate is the <strong>Ramsey equation</strong>. The Ramsey equaion is defined as follows:</p>
+<p>The <strong>social discount rate</strong> is the rate at which society discounts future benefits and costs. One useful tool for thinking about the social discount rate under a <em>prescriptive approach</em> to discounting is the <strong>Ramsey equation</strong>. The Ramsey equation is defined as follows:</p>
 <p><span class="math display">\[ r = \delta + \eta g\]</span></p>
 <p>where:</p>
 <ul>
@@ -207,7 +361,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><span class="math inline">\(\eta\)</span> is the <strong>elasticity of marginal utility of consumption</strong>
 <ul>
-<li>A.K.A.: the <em>coefficient of relative risk aversion</em> or <em>intergenerational inequality aversion</em></li>
+<li>AKA: the <em>coefficient of relative risk aversion</em> or <em>intergenerational inequality aversion</em></li>
 <li>Governs how much we value an additional dollar as society grows wealthier. As <span class="math inline">\(\eta\)</span> increases, the more we dislike inequality, which means we value today’s consumption more strongly.</li>
 <li>Reasonable values of <span class="math inline">\(\eta\)</span> typically fall between 1 and 4.</li>
 </ul></li>
@@ -221,38 +375,94 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="what-social-discount-rate-should-we-use">what social discount rate should we use?</h2>
 <p>Choosing a value for the social discount rate is a tricky business that can be informed just as much by ethics and philosophy as it can by economics.</p>
 <ul>
-<li><p>The federal government typically uses two discount rates for benefit-cost analysis: 3% and 7%. The 3% rate is used to reflect the opportunity cost of consumption, while the 7% rate is used to reflect the opportunity cost of capital investment.</p></li>
+<li><p>Historically, the federal government typically used two discount rates for benefit-cost analysis: 3% and 7%. The 3% rate is used to reflect the opportunity cost of consumption, while the 7% rate is used to reflect the opportunity cost of capital investment.</p></li>
 <li><p>Alternative rationales depend on moral or ethical considerations in choosing the parameters for the Ramsey equation. The 2007 <a href="https://webarchive.nationalarchives.gov.uk/ukgwa/20100407172811/https:/www.hm-treasury.gov.uk/stern_review_report.htm">Stern Review on the Economics of Climate Change</a> used a social discount rate of 1.4%. These choices were made to reflect the following:</p>
 <ul>
 <li><span class="math inline">\(\delta=0.1\%\)</span> reflects the idea that we should value future generations’ welfare almost equally to our own.</li>
-<li><span class="math inline">\(\eta=1\)</span> reflects the idea that we should value an additional dollar of consumption equally, regardless of how wealthy we are.</li>
+<li><span class="math inline">\(\eta=1\)</span> reflects the idea that we should value an additional dollar of consumption equally, regardless of how wealthy we are. The choice of <span class="math inline">\(\eta=1\)</span> was particularly conversial. Many economists believe that <span class="math inline">\(\eta\)</span> should be larger than 1, which would imply that we should value an additional dollar of consumption more highly as we become wealthier. This would imply that we should use a higher discount rate.</li>
 <li><span class="math inline">\(g=1.3\%\)</span> reflects the idea that we expect consumption per capita to grow at 1.3% per year.</li>
 </ul></li>
-<li><p>The choice of <span class="math inline">\(\eta=1\)</span> was particularly conversial. Many economists believe that <span class="math inline">\(\eta\)</span> should be larger than 1, which would imply that we should value an additional dollar of consumption more highly as we become wealthier. This would imply that we should use a higher discount rate.</p></li>
 </ul>
+<p>In 2023, the US Government adopted new guidelines for discounting (and conducting benefit-cost analysis, more generally) in a very wonky document titled <a href="https://www.whitehouse.gov/wp-content/uploads/2023/11/CircularA-4.pdf">“Circular A-4”</a>. Several arguments for discounting that pertain to climate change are presented in Circular A-4:</p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Circular A-4 arguments for a prescriptive approach to long-term discounting
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Some believe that it is ethically impermissible to discount the utility of future generations. That is, government should treat all generations equally. Even under an approach that does not discount the utility of future generations, it is often appropriate to discount longterm consumption benefits and costs—although at a lower rate than the near-term effects more likely to fall on a single generation—if there is an expectation that future generations will be wealthier and thus will value a marginal dollar of benefits or costs by less than those alive today, or if there is a non-zero probability of sufficiently catastrophic risks. To account for these special ethical considerations, an extensive literature uses a “prescriptive” approach to long-term discounting, determining the appropriate degree of weight that society should place on the welfare of future generations. (Circular A-4, pp.&nbsp;80)</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Circular A-4 arguments for using a lower/declining rate for long-term discounting
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A distinct reason for discounting the benefits and costs accruing to future generations at a lower rate is uncertainty about the appropriate value of the discount rate. Private market rates provide a reasonably reliable reference for determining the rate at which society is willing to trade consumption over time within a few decades, but for extremely long time periods no comparable private rates exist. Because future changes in the social rate of time preference are uncertain but correlated over time, the certainty-equivalent discount rate will have a declining schedule. The appropriate discount rate declines because it is the average of the cumulative discount factors, not an average of the discount rates, that matters. (Circular A-4, pp.&nbsp;80)</p>
+</div>
+</div>
 </section>
 <section id="uncertainty-and-the-discount-rate" class="level2">
 <h2 class="anchored" data-anchor-id="uncertainty-and-the-discount-rate">uncertainty and the discount rate</h2>
 <p>Projecting future costs and benefits is inherently uncertain. When using the Ramsey equation, we need to make assumptions about the growth rate of consumption per capita over centuries. When focused on a descriptive approach, the discount rate might reflect changes in interests rates that may be driven by uncertain future monetary policy.</p>
+<p>The key point to remember is that <em>uncertainty in the discount rate provides justification for using a lower discount rate.</em></p>
+<p>Imagine today, we use a 4% discount rate, but that discount rate has an equally likely chance of becoming 1% or 7% in 100 years. What discount rate should we use today to reflect that uncertainty?</p>
+<p>We can work through an example to define the <strong>certainty-equivalent discount rate</strong>. The certainty-equivalent discount rate is the discount rate that would make us indifferent between that rate and taking the gamble on the uncertain rate.</p>
+<p>The PV of receiving $1000 in 100 years for each rate is:</p>
+<div id="tbl-discount" class="anchored">
+<table class="table-striped table-hover table">
+<caption>Table&nbsp;1: Discount rates to calculate certainty equivalents</caption>
+<thead>
+<tr class="header">
+<th>discount rate</th>
+<th>nominal value</th>
+<th>discounted value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1%</td>
+<td>$1000</td>
+<td>$367.88</td>
+</tr>
+<tr class="even">
+<td>4%</td>
+<td>$1000</td>
+<td>$18.32</td>
+</tr>
+<tr class="odd">
+<td>7%</td>
+<td>$1000</td>
+<td>$0.91</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Can we just use the average of the discounted values for the 1% and 7% rates (i.e., <span class="math inline">\(\bar{PV}_{100}\)</span> ($367.88 + $0.91) / 2 = $184.40) as the certainty-equivalent discount rate? The short answer is no, and the reason depends on the shape of the present-value formula.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>But! We can calculate the certainty-equivalent discount rate by comparing the average of the two discounted values to across adjacent years (i.e., comparing year 100 vs.&nbsp;101).</p>
 <ul>
-<li>Uncertainty in the discount rate provides justification for using a <em>lower</em> discount rate.</li>
+<li>PV of $1000 in 101 years at 1% discount rate: $364.22</li>
+<li>PV of $1000 in 101 years at 7% discount rate: $0.85</li>
+<li>Average of the two above values, <span class="math inline">\(\bar{PV}_{101}\)</span>: ($364.22 + $0.85)/2 = $182.53</li>
 </ul>
-</section>
-<section id="importance-of-the-discount-rate" class="level2">
-<h2 class="anchored" data-anchor-id="importance-of-the-discount-rate">importance of the discount rate</h2>
-<p>The choice of the social discount rate is one of the most influential components for understanding the costs and benefits of climate change. Because discounting compounds values over time, and GHG mitigation generates benefits over a long time horizon, small changes in the discount rate can have large impacts on the present value of future benefits.</p>
-<p>Imagine receiving a benefit of $1 million in 100 years.</p>
-<ul>
-<li>At a 2% discount rate, the PV of that benefit is ~$138,000.</li>
-<li>At a 3% discount rate, the PV of that benefit is ~$52,000.</li>
-<li>At a 7% discount rate, the PV of that benefit is ~$1150.</li>
-</ul>
-<p>If the cost of achieving that benefit were $100,000 today, it is easy to see how the project makes sense at a 2% discount rate, but not at a 3% or 7% discount rate.</p>
+<p>Then, we can calculate the certainty-equivalent discount rate by dividing the average of the two discounted values across two adjacent years:</p>
+<p><span class="math display">\[ \frac{\bar{PV}_{100}}{\bar{PV}_{101}} = \frac{\$184.40}{\$182.53} = 1.01024... = (1+r) \]</span> <span class="math display">\[ \implies r \approx 1.02\% \]</span></p>
+<p>This value is the certainty-equivalent discount rate for the 50-50 chance of seeing a 1% or 7% discount rate in 100 years. This value is clearly much lower than 4%, which is the average of the two rates. If there is uncertainty in the discount rate, that leads to a much lower certainty-equivalent discount rate that we should use in our benefit-cost analysis.</p>
 </section>
 <section id="resources-and-further-reading" class="level2">
 <h2 class="anchored" data-anchor-id="resources-and-further-reading">resources and further reading</h2>
 <ul>
-<li>Arrow et al., 2003. <a href="https://www.science.org/doi/10.1126/science.1235665">“Determining Benefits and Costs for Future Generations”</a>, <em>Science</em>.</li>
+<li><p>Arrow et al., 2003. <a href="https://www.science.org/doi/10.1126/science.1235665">“Determining Benefits and Costs for Future Generations”</a>, <em>Science</em>.</p></li>
+<li><p>Prest, Brian C., William Pizer, and Richard G. Newell, 2021, <a href="https://www.resources.org/archives/improving-discounting-in-the-social-cost-of-carbon/">Improving Discounting in the Social Cost of Carbon</a>, Resources Magazine, 2021.</p></li>
 </ul>
 <!-- 
 To do:
@@ -263,7 +473,24 @@ To do:
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>This is an application of Jensen’s inequality, which states that <span class="math inline">\(f(E[x]) \leq E[f(x)]\)</span> for any convex <span class="math inline">\(f\)</span>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script type="ojs-module-contents">
+{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"viewof discountRate = Inputs.range([0, 0.1], {value: 0.025, step: 0.005, label: \"discount rate\"});\nviewof timeHorizon = Inputs.range([1, 300], {value: 300, step: 1, label: \"time horizon (years)\"});\nviewof initialValue = Inputs.range([1000, 100000], {value: 1000, step: 500, label: \"initial value\"});\n\ndiscountedValue = {\n  const data = [];\n  for (let t = 0; t <= timeHorizon; t++) {\n    const discounted = initialValue / Math.pow(1 + discountRate, t);\n    data.push({year: t, value: discounted});\n  }\n  return data;\n}\n\nchart = {\n  const width = 600, height = 400;\n  const svg = html`<svg width=${width} height=${height}></svg>`;\n  \n  const margin = {top: 20, right: 30, bottom: 30, left: 40};\n  const x = d3.scaleLinear()\n    .domain([0, timeHorizon])\n    .range([margin.left, width - margin.right]);\n\n  const y = d3.scaleLinear()\n    .domain([0, initialValue])\n    .nice()\n    .range([height - margin.bottom, margin.top]);\n\n  const xAxis = (g) => g\n    .attr(\"transform\", `translate(0,${height - margin.bottom})`)\n    .call(d3.axisBottom(x).ticks(width / 80).tickSizeOuter(0));\n\n  const yAxis = (g) => g\n    .attr(\"transform\", `translate(${margin.left},0)`)\n    .call(d3.axisLeft(y));\n\n  const line = d3.line()\n    .x(d => x(d.year))\n    .y(d => y(d.value));\n\n  d3.select(svg).selectAll(\"*\").remove(); // clear previous render\n\n  const g = d3.select(svg)\n    .append(\"g\");\n\n  g.append(\"g\").call(xAxis);\n  g.append(\"g\").call(yAxis);\n\n  g.append(\"path\")\n    .datum(discountedValue)\n    .attr(\"fill\", \"none\")\n    .attr(\"stroke\", \"steelblue\")\n    .attr(\"stroke-width\", 1.5)\n    .attr(\"d\", line);\n\n  return svg;\n}\n"},{"methodName":"interpretQuiet","source":"shinyInput('discountRate')"},{"methodName":"interpretQuiet","source":"shinyInput('timeHorizon')"},{"methodName":"interpretQuiet","source":"shinyInput('initialValue')"}]}
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

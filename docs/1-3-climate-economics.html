@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -153,10 +172,16 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#markets-and-climate-change" id="toc-markets-and-climate-change" class="nav-link active" data-scroll-target="#markets-and-climate-change">markets and climate change</a></li>
+  <li><a href="#micro-review" id="toc-micro-review" class="nav-link" data-scroll-target="#micro-review">micro review</a>
+  <ul class="collapse">
+  <li><a href="#individual-and-market-or-aggregate-demand" id="toc-individual-and-market-or-aggregate-demand" class="nav-link" data-scroll-target="#individual-and-market-or-aggregate-demand">individual and market (or aggregate) demand</a></li>
+  <li><a href="#economic-surplus" id="toc-economic-surplus" class="nav-link" data-scroll-target="#economic-surplus">economic surplus</a></li>
+  </ul></li>
   <li><a href="#externalities" id="toc-externalities" class="nav-link" data-scroll-target="#externalities">externalities</a></li>
   <li><a href="#public-goods" id="toc-public-goods" class="nav-link" data-scroll-target="#public-goods">public goods</a></li>
   <li><a href="#the-coase-theorem" id="toc-the-coase-theorem" class="nav-link" data-scroll-target="#the-coase-theorem">the coase theorem</a></li>
   <li><a href="#resources-and-further-reading" id="toc-resources-and-further-reading" class="nav-link" data-scroll-target="#resources-and-further-reading">resources and further reading</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">references</a></li>
   </ul>
 </nav>
     </div>
@@ -189,9 +214,9 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="markets-and-climate-change">markets and climate change</h2>
 <p>Climate change is a <em>massive</em> unpriced externality.</p>
 <p>When we fail to account for the <strong>social costs</strong> of our production and consumption decisions, we tend to overproduce and overconsume.</p>
-<p>Markets are useful tools because they efficiently allocate scarce resources. What does this mean? Well, markets maximize net surplus by balancing the benefits we get from consumption with the costs of producing the goods and services we consume.</p>
+<p>Markets are useful tools because they <em>efficiently allocate scarce resources</em>. What does this mean? Well, markets maximize net surplus by balancing the benefits we get from consumption with the costs of producing the goods and services we consume.</p>
 <p>To understand this, consider the total benefits of GHG emissions <em>abatement</em> (i.e., the benefits we get from reducing GHG emissions) and the total costs of GHG emissions abatement.</p>
-<p>Reducing emissions by a little is relatively inexpensive (or may even have negative costs). For example, switching from incandescent lightbulbs to LED lightbulbs can save money. As we reduce the cheapest GHG emissions first, we will then have to tackle more expensive emissions reductions elsewhere. Switching from coal to natural gas might reduce emissions relatively cheaply for electricity production. But, switching from natural gas to renewables is more expensive. And, switching from renewables to nuclear power is even more expensive. This means that the total costs of emissions abatement increases the more emissions we abate. As a result, the total abatement cost curve is increasing at an increasing rate (i.e., it is convex).</p>
+<p>Reducing emissions by a little is relatively inexpensive (or may even have negative costs). For example, switching from incandescent lightbulbs to LED lightbulbs can save money and reduce GHGs emissions. As we reduce the cheapest GHG emissions first, we will then have to tackle more expensive emissions reductions elsewhere. Switching from coal to natural gas might reduce emissions relatively cheaply for electricity production. But, switching from natural gas to renewables is more expensive. And, switching from renewables to nuclear power is even more expensive. This means that the total costs of emissions abatement increases the more emissions we abate. As a result, the total abatement cost curve is increasing at an increasing rate (i.e., it is convex).</p>
 <div id="fig-costs-benefits" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./images/costs_benefits.png" class="img-fluid figure-img" style="width:80.0%"></p>
@@ -206,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <div id="fig-ghg-mac" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="https://blogs.edf.org/climate411/wp-content/blogs.dir/7/files/2021/08/McKinsey-Cost-Curve-768x485.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p><img src="https://blogs.edf.org/climate411/wp-content/blogs.dir/7/files/2021/08/McKinsey-Cost-Curve-768x485.png" class="img-fluid figure-img" style="width:100.0%"></p>
 <figcaption class="figure-caption">Figure&nbsp;2: A classic example of a GHG marginal abatement cost curve from Mckinsey and Company (Source: https://blogs.edf.org/climate411/2021/08/31/a-revamped-cost-curve-showcases-the-biggest-carbon-cutting-opportunities/)</figcaption>
 </figure>
 </div>
@@ -219,46 +244,174 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p>For our purposes, the last condition is the most important. When markets are incomplete, they fail to account for all relevant costs and benefits. In the case of climate change, the costs of GHG emissions are generally not reflected in the prices we pay for goods and services. As a result, we overproduce and overconsume goods and services that generate GHG emissions.</p>
 </section>
-<section id="externalities" class="level2">
-<h2 class="anchored" data-anchor-id="externalities">externalities</h2>
-<p><strong>Externalities</strong>: An externality results when the actions of one individual (or firm) have a direct, unintentional, and uncompensated effect on the well-being of other individuals or the profits of other firms.</p>
-<p>Externalities can be positive or negative. In the case of GHG emissions, the externality is negative because the costs of emissions are not reflected in the prices we pay for goods and services. This augments our standard demand model when were thinking about, say, the market for gasoline consumption.</p>
-<div id="fig-externalities" class="quarto-figure quarto-figure-center anchored">
+<section id="micro-review" class="level2">
+<h2 class="anchored" data-anchor-id="micro-review">micro review</h2>
+<p>Before we dive deeper into the economics of climate change, it will be useful to review some basic microeconomic concepts that will help understand how we model some of the problems from climate change with tools of supply and demand.</p>
+<section id="individual-and-market-or-aggregate-demand" class="level3">
+<h3 class="anchored" data-anchor-id="individual-and-market-or-aggregate-demand">individual and market (or aggregate) demand</h3>
+<p><em>Individual</em> demand curves reflect how much of a good—say, gasoline—that individual consumers are willing buy at any given price. Individual demand curves are plotted with quantity on the horizontal axis and price on thevertical axis. The slope of the demand curve reflects the <em>marginal benefit</em> of consuming an additional unit of the good. Demand curves slope downards because as the price of a good falls, consumers are willing to buy more of it. But, the demand curve also tells us how much people value additional consumption of the good. As quantity consumed rises, the marginal benefit of consuming an additional unit of the good falls. We call this <em>diminishing marginal benefits</em>.</p>
+<p>The <em>market</em> or <em>aggregate</em> demand curve reflects the sum of all individual demand curves. Importantly, with private goods, we sum individual demand curves horizontally to get the market demand curve. Adding “horizontally” means that we add up all quantities demanded at each price level. In <a href="#tbl-demand">Table&nbsp;1</a>, we see that the market demand for gasoline is the sum of the individual demand curves for Person A, Person B, and Person C for any given price level.</p>
+<div id="tbl-demand" class="anchored">
+<table class="table-striped table-hover table">
+<caption>Table&nbsp;1: Individual and market demand for gasoline</caption>
+<thead>
+<tr class="header">
+<th>Price</th>
+<th>Person A</th>
+<th>Person B</th>
+<th>Person C</th>
+<th>Market</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>$1</td>
+<td>5</td>
+<td>12</td>
+<td>7</td>
+<td>24</td>
+</tr>
+<tr class="even">
+<td>$2</td>
+<td>4</td>
+<td>10</td>
+<td>6</td>
+<td>20</td>
+</tr>
+<tr class="odd">
+<td>$3</td>
+<td>3</td>
+<td>8</td>
+<td>5</td>
+<td>16</td>
+</tr>
+<tr class="even">
+<td>$4</td>
+<td>2</td>
+<td>6</td>
+<td>4</td>
+<td>12</td>
+</tr>
+<tr class="odd">
+<td>$5</td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>$6</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>$7</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We can also represent the market demand curve graphically. In <a href="#fig-demand">Figure&nbsp;3</a>, we see that the market demand curve is the sum of the individual demand curves for Person A, Person B, and Person C. This is just the same information as in <a href="#tbl-demand">Table&nbsp;1</a>, but represented graphically.</p>
+<div id="fig-demand" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="./images/gasoline_externalities.png" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;3: The market for gasoline with externalities</figcaption>
+<p><img src="./images/econ_demand.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;3: Individual and market demand</figcaption>
 </figure>
 </div>
-<p>Consider <a href="#fig-externalities">Figure&nbsp;3</a>, the private equilibrium level is <span class="math inline">\(Q^{private}\)</span> and <span class="math inline">\(P^{private}\)</span> where the supply (or private marginal cost) curve and the demand (or private marginal benefit) curve intersect. But, we know gasoline consumption generates externalities. The <strong>marginal social cost</strong> curve reflects the total costs to society that are associated with gasoline consumption (inclusive of GHG emissions). Those externalities are represented by the vertical difference between the private marginal cost curve and the social marginal cost curve, which is called the <strong>marginal external damages</strong> of gasoline consumption.</p>
+<p>Building on this logic, we can go a step further and demonstrate these demand curves algebraically as well. We can define individual demand curves as follows:</p>
+<ul>
+<li><span class="math inline">\(MB_A(q) : p = 6 − q\)</span></li>
+<li><span class="math inline">\(MB_B(q) : p = 7 − 0.5q\)</span></li>
+<li><span class="math inline">\(MB_C(q) : p = 8 − q\)</span></li>
+</ul>
+<p>where <span class="math inline">\(p\)</span> is the price per gallon of gasoline and <span class="math inline">\(q\)</span> is the quantity of gasoline consumed.</p>
+<p>To find the market or aggregate demand curve, we want to add the demand curves together, which we can represent as: <span class="math inline">\(Q_{agg} = q_A + q_B + q_C\)</span>. This is just the sum of the individual demand curves. To do this, we first solve each individual demand curve for <span class="math inline">\(q\)</span>:</p>
+<ul>
+<li><span class="math inline">\(q_A = 6 − p\)</span></li>
+<li><span class="math inline">\(q_B = (7 − p)/0.5\)</span></li>
+<li><span class="math inline">\(q_C = 8 − p\)</span></li>
+</ul>
+<p>This implies that <span class="math inline">\(Q = (6 − p) + (7 − p)/0.5 + (8 − p)\)</span>, which simplifies to <span class="math inline">\(Q = 28 − 4p\)</span>. Now, we can find the market demand curve by solving for <span class="math inline">\(p\)</span>, which gives us <span class="math inline">\(p = 7 − Q/4\)</span>. This is the market demand curve for gasoline that is represent in <a href="#fig-demand">Figure&nbsp;3</a>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p><em>Individual and market supply curves</em> work the same way, but they reflect the costs of producing goods and services. Supply curves will be upward sloping because as the price of a good rises, firms are willing to produce more of it. But, the supply curve also tells us how much it costs firms to produce additional units of the good. As quantity produced rises, the marginal cost of producing an additional unit of the good rises. We call this phenomenon <em>diminishing marginal returns</em>.</p>
+</section>
+<section id="economic-surplus" class="level3">
+<h3 class="anchored" data-anchor-id="economic-surplus">economic surplus</h3>
+<p>Above, we discussed how markets maximize net benefits by balancing the benefits of emissions abatement with the costs of doing so. This is a reflection of the concept of <em>economic surplus</em>. Economic surplus is the sum of <em>consumer surplus</em> and <em>producer surplus</em> for any given quantity consumed and produced in a market.</p>
+<p>Demand curves reflect the consumer’s willingness to pay for a good at any quantity. Consumer surplus is the difference between what consumers are willing to pay for a good and what they actually pay, which is represented by the area between the demand curve and the price level. In <a href="#fig-cs">Figure&nbsp;4 (a)</a>, the vertical distance between the demand curve and the price level at <span class="math inline">\(P\)</span> reflects the consumer surplus for that quantity level. For example, consumer surplus on the 4th gallon of gasoline is $6 - $3 = $3. If we calculate this vertical distance for every level of quantity, we get the aggregate measure of consumer surplus, which is the entire shaded between the demand curve and the price level up to the equilbrum quantity. We can easily calculate this area as the area of a triangle: <span class="math inline">\(CS = 0.5 \times (7-3) \times 16 = \$32\)</span>.</p>
+<div id="fig-surplus" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-cs" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/econ_cs.png" class="img-fluid figure-img" data-ref-parent="fig-surplus"></p>
+<figcaption class="figure-caption">(a) Consumer surplus</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-ps" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/econ_ps.png" class="img-fluid figure-img" data-ref-parent="fig-surplus"></p>
+<figcaption class="figure-caption">(b) Producer surplus</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: Consumer and producer surplus</figcaption><p></p>
+</figure>
+</div>
+<p>Producer surplus follows a similar description, although since supply curves represent marginal costs of producing a good, the producer surplus reflects the difference between what the seller receives for producing any quantity of goods less the costs of producing it. In <a href="#fig-ps">Figure&nbsp;4 (b)</a>, the vertical distance between the price level and the supply curve reflects the producer surplus for that quantity level. For example, producer surplus on the 8th gallon of gasoline is $3 - $2 = $1. If we calculate this vertical distance for every level of quantity, we get the aggregate measure of producer surplus, which is the entire shaded between the supply curve and the price level up to the equilibrium quantity. We can easily calculate this area as the area of a triangle: <span class="math inline">\(PS = 0.5 \times (3-1) \times 16 = \$16\)</span>.</p>
+<p>These concepts are helpful because consumers and producers are going to make decisions in their best interest that maximize their own economic surplus. Faced with any price, consumers will continue to purchase goods and services until the marginal benefit of consuming an additional unit of the good equals the price of the good. In other words, the consumer surplus of the last unit consumed will be zero. If consumers were to consume more, the price they would pay would be more than the benefit they would receive from consuming the good. Similarly, producers will continue to produce goods and services until the marginal cost of producing an additional unit of the good equals the price of the good. In other words, the producer surplus of the last unit produced will be zero. If producers were to produce more, the price they would receive would be less than the cost of producing the good.</p>
+<p>This behavior means that consumers will keep consuming until <span class="math inline">\(MB = p\)</span> and producers will keep producing until <span class="math inline">\(MC = p\)</span>. Because consumers and producers face the same price, we end up at the equilibrium quantity where <span class="math inline">\(MB = MC\)</span>. So, everyone acting in their own self-interest leads to an efficient allocation of resources. This discussion captures the essence of markets.</p>
+</section>
+</section>
+<section id="externalities" class="level2">
+<h2 class="anchored" data-anchor-id="externalities">externalities</h2>
+<p>An <strong>externality</strong> results when the actions of one individual (or firm) have a direct, unintentional, and uncompensated effect on the well-being of other individuals or the profits of other firms. (Importantly, price changes are not externalities because the consequences of a price change are already accounted for within the market.)</p>
+<p>Externalities can be positive or negative. In the case of GHG emissions, the externality is negative because the costs of emissions are not reflected in the prices we pay for goods and services. This augments our standard demand model when were thinking about, say, the market for gasoline consumption. Gasoline is a good motivating example because it creates several salient externalities: GHG emissions, local air pollution from tailpipe emissions, traffic congestion, and accident externalities. Incidentally, recent research suggests that the social cost of gasoline consumption is just under $4 per gallon <span class="citation" data-cites="linn2023transportation">Linn et al. (<a href="#ref-linn2023transportation" role="doc-biblioref">2023</a>)</span>.</p>
+<div id="fig-externalities" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/econ_dwl.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;5: The market for gasoline with externalities</figcaption>
+</figure>
+</div>
+<p>Consider <a href="#fig-externalities">Figure&nbsp;5</a>, the private equilibrium level is <span class="math inline">\(q^\star\)</span> and <span class="math inline">\(p^*\)</span> where the supply (or private marginal cost) curve and the demand (or private marginal benefit) curve intersect. But, we know gasoline consumption generates externalities. The <strong>social marginal cost (SMC)</strong> curve reflects the total costs to society that are associated with gasoline consumption (inclusive of GHG emissions). Those externalities are represented by the vertical difference between the private marginal cost curve and the social marginal cost curve, which is called the <strong>marginal external damages (MD)</strong> of gasoline consumption. In the figure, <span class="math inline">\(MD=\$3\)</span> implies that there are $3 of external costs generated for every gallon of gasoline consumed.</p>
 <ul>
 <li><p>Operating at the privately optimal point of consumption results in <strong>deadweight loss</strong> to society, which reflects the social welfare loss of failure to incorporate external costs into the price of gasoline. Deadweight loss is the welfare loss borne by people outside of the market.</p></li>
-<li><p>If we were to incorporate the social cost of gasoline consumption into the price of gasoline, the supply curve would shift up by the amount of the marginal external damages. This would result in a new equilibrium level of consumption, <span class="math inline">\(Q^{social}\)</span> and <span class="math inline">\(P^{social}\)</span>. At this point, consumers would have to pay more (in this case, 5 dollars per gallon) and suppliers would receive less than <span class="math inline">\(P^{private}\)</span>.</p></li>
-<li><p>Moving from <span class="math inline">\(Q^{private}\)</span> to <span class="math inline">\(Q^{social}\)</span> would also reduce producer and consumer surplus (the areas shaded in green). This makes sense: consumers are getting fewer benefits from gasoline, and producers are receiving less profit. So, there are “losers” when we move to the socially efficient allocation, despite the fact that society as a whole is better off.</p></li>
+<li><p>If we were to incorporate the social cost of gasoline consumption into the price of gasoline, the supply curve would shift up by the amount of the marginal external damages. This would result in a new equilibrium level of consumption, <span class="math inline">\(q_S^\star\)</span>, at the socially optimal price, <span class="math inline">\(p_S^\star\)</span>. At this point, consumers would have to pay more (in this case, 5 dollars per gallon), which would reduce the quantity of gasoline consumed.</p></li>
 </ul>
+<p><a href="#fig-externalities">Figure&nbsp;5</a> is one of the most important figures in environmental economics because it demonstrates that society will consume and produce too much of goods that generate negative externalities, which is often the case that we care about when economic activity generates environmental harm. Later on, we will consider different policy instruments that attempt to achieve the socially optimal quantity through the use of taxes, subsidies, regulations, or designing markets that internalize the external costs of economic activity.</p>
 </section>
 <section id="public-goods" class="level2">
 <h2 class="anchored" data-anchor-id="public-goods">public goods</h2>
-<p>One primary reason that markets fail to account for the social costs of GHG emissions is that GHG mitigation is a <strong>public good</strong>. If the US were to abate GHG emissions, the benefits would be shared by everyone in the world. But, the costs of abatement would be borne by US citizens. As a result, the US has an incentive to <em>free ride</em> on the efforts of other countries to reduce emissions.</p>
+<p>One primary reason that markets fail to account for the social costs of GHG emissions is that GHG mitigation is a <strong>public good</strong>. If the US were to abate GHG emissions, the benefits would be shared by everyone in the world. But, the costs of abatement would be borne by US citizens. As a result, the US has an incentive to <strong>free ride</strong> on the efforts of other countries to reduce emissions.</p>
 <p>Public goods are characterized by two key features:</p>
 <ol type="1">
 <li><strong>Non-rivalry</strong>: One person’s consumption of the good does not reduce the amount available for others to consume.</li>
 <li><strong>Non-excludability</strong>: Others cannot be excluded from consuming the good.</li>
 </ol>
 <p>Examples of pure public goods include clean air, national defense, Wikipedia, and so forth.</p>
-<p>Private goods are rivalrous and excludable. I can exclude you from consuming my private goods (e.g., the peanut butter and jelly sandwich I eat on most days for lunch). And, if I consume my car, you cannot consume it.</p>
+<p>Private goods are rivalrous and excludable. I can exclude you from consuming my private goods (e.g., the peanut butter and jelly sandwich I eat for lunch on most days). And, if I eat my sandwich, there is nothing left for you to eat.</p>
 <p>Two other classes of goods are relevant for our purposes:</p>
 <ul>
 <li><p><strong>Common pool resources</strong>: Common pool resources are rivalrous but non-excludable. For example, fish in the ocean are rivalrous because if I catch a fish, you cannot catch it. But, the ocean is non-excludable because it is impossible to prevent people from fishing in the ocean.</p></li>
 <li><p><strong>Club goods</strong>: Club goods are non-rivalrous but excludable. For example, a private park is non-rivalrous because if I am in the park, you can also be in the park. But, the park is excludable because I can prevent you from entering the park.</p></li>
 </ul>
-<p>When modeling equilibrium supply of public goods, we need to account for the nonrival nature of public goods. In <a href="#fig-public-goods">Figure&nbsp;4</a>, there are two marginal benefit curves for different people that reflect how much they value trips to a national forest for hiking or camping. Because both people can simultaneously enjoy the national forest, we need to add up their marginal benefits curves <em>vertically</em> to understand the aggregate benefits that each quantity of trips provides.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> This vertical summation results in the <strong>social marginal benefit</strong> curve.</p>
+<p>When modeling equilibrium supply of public goods, we need to account for the nonrival nature of public goods. In <a href="#fig-public-goods">Figure&nbsp;6</a>, there are two marginal benefit curves for different people that reflect how much they value flood protection. Imagine these two individuals live in a coastal community and face different risks of sea-level rise because of the elevation of their property, the value of their home, and so forth. The figure represents their willingness-to-pay for a seawall that provides reduced risk of flooding during hurricanes. Because both people can simultaneously enjoy the seawall, we need to add up their marginal benefits curves <em>vertically</em> to understand the aggregate benefits that each quantity of trips provides.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> This vertical summation results in the <strong>social marginal benefit</strong> curve.</p>
 <div id="fig-public-goods" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="./images/public_goods.png" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: Modeling public goods</figcaption>
+<p><img src="./images/econ_publicgoods.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;6: Modeling public goods</figcaption>
 </figure>
 </div>
-<p>The supply curve reflects the marginal cost of that the government bears in providing the public good (e.g., trail maintenance, campsite development, and so forth). If the government were to only consider the private marginal benefits of the public good, they might provide <span class="math inline">\(Q_b\)</span>, which reflects person B’s demand for trips. But, if the government were to consider the social marginal benefits of the public good, they would provide <span class="math inline">\(Q^\star\)</span>, which reflects the sum of person A and person B’s demand for trips (i.e., the total willingness to pay for trips to the national forest).</p>
+<p>The supply curve reflects the marginal cost of that the community bears in providing the public good (e.g., building materials, labor, and maintenance costs). Imagine that both person A and B are the people who actually have to build the wall. Person A is only willing-to-pay up to <span class="math inline">\(MB_A\)</span> to build the wall, resulting in the height <span class="math inline">\(Q_A\)</span> of the seawall, while person B is willing-to-pay up to <span class="math inline">\(MB_B\)</span>, resulting in <span class="math inline">\(Q_B\)</span>. Person A might recognize that Person B has a higher valuation of the seawall and, if Person B provides <span class="math inline">\(Q_B\)</span> feet of the seawall, then Person A’s home is protected. This provides Person A with the incentive to free ride on the contribution of Person B.</p>
+<p>But, this free-riding behavior will result in underprovision of the seawall. In order to determine the socially optimal level of provision, we need to add up vertically both people’s willingness-to-pay for the seawall and find where the resulting social marginal benefit curve intersects with the marginal cost curve. This intersection point is the socially optimal level of provision, represented by <span class="math inline">\(Q^\star\)</span> in <a href="#fig-public-goods">Figure&nbsp;6</a>. The socially optimal level of provision maximizes the net benefits of the seawall to society by incorporating the value that both individuals place on the seawall.</p>
 </section>
 <section id="the-coase-theorem" class="level2">
 <h2 class="anchored" data-anchor-id="the-coase-theorem">the coase theorem</h2>
@@ -267,6 +420,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="resources-and-further-reading" class="level2">
 <h2 class="anchored" data-anchor-id="resources-and-further-reading">resources and further reading</h2>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">references</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-linn2023transportation" class="csl-entry" role="listitem">
+Linn, Joshua, Virginia McConnell, Sophie Pesek, and Daniel Raimi. 2023. <span>“Transportation Taxes and Energy Transitions: Alternative Policy Designs for Funding US Road Infrastructure and Pricing Externalities.”</span> Resources for the Future.
+</div>
+</div>
 
 
 </section>
@@ -275,7 +436,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>Recall that when we are dealing with private goods, we add up demand curves <em>horizontally</em> to determine the aggregate demand curve. We do this because of the rivalrous nature of private goods. Only one person can receive the benefits of consuming a single apple. With public goods, this calculus changes because multiple people can enjoy the same quantity of, say, GHG mitigation.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>You might realize that the figure and the algebraic solution are not exactly the same. This occurs because the aggregate demand curve will actually be “kinked” because of the different intercepts of the individual demand curves (e.g., above a price of $6, there are only two demand curves to add together; above a price of $7, there is only one demand curve to consider). This means that the slope of the curve will change above these prices although I’ve avoided this discussion for clarity.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Recall that when we are dealing with private goods, we add up demand curves <em>horizontally</em> to determine the aggregate demand curve. We do this because of the rivalrous nature of private goods. Only one person can receive the benefits of consuming a single apple. With public goods, this calculus changes because multiple people can enjoy the same quantity of, say, GHG mitigation.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

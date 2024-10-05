@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -106,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./1-4-costs-benefits.html" rel="" target="">
- <span class="dropdown-text">1.4 – what are the costs and benefits of climate change</span></a>
+ <span class="dropdown-text">1.4 – how do we measure the costs and benefits of climate change?</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./1-5-discounting.html" rel="" target="">
@@ -151,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#global-inequality-in-climate-impacts" id="toc-global-inequality-in-climate-impacts" class="nav-link active" data-scroll-target="#global-inequality-in-climate-impacts">global inequality in climate impacts</a></li>
-  <li><a href="#resources-and-further-reading" id="toc-resources-and-further-reading" class="nav-link" data-scroll-target="#resources-and-further-reading">resources and further reading</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">references</a></li>
   </ul>
 </nav>
     </div>
@@ -180,19 +199,22 @@ ul.task-list li input[type="checkbox"] {
 <section id="global-inequality-in-climate-impacts" class="level2">
 <h2 class="anchored" data-anchor-id="global-inequality-in-climate-impacts">global inequality in climate impacts</h2>
 <p>It is not surprising that climate change will have different impacts in different parts of the world. But, it is perhaps surprising that climate change is expected to benefit some countries (particularly wealthy, colder countries like Canada and countries in Northern Europe). This fact is one reason why it is difficult to reach international agreements on climate change mitigation (e.g., Russia might benefit from climate change, so has little incentive to reduce emissions and encourage other countries to do the same).</p>
-<p><a href="#fig-scc-share">Figure&nbsp;1</a> demonstrates a fundamental issue with climate change: the countries that are responsible for the majority of GHG emissions are not the countries that will bear the brunt of climate impacts. This figure shows the country-specific SCC (vertical axis) against the share of global GHG emissions for each country (horizontal axis). The US was responsible for roughly 15% of global GHG emissions in 2013, but the SCC for the US is roughly 12% of the global SCC. This means that emissions and damages are approximately proportional (note, however, that the US has a much greater share of <em>historical</em> emissions). China is responsible for roughly 30% of global GHG emissions in 2013, but the SCC for China is roughly 5% of the global SCC. This means that China is responsible for a disproportionate share of global emissions, but will bear a relatively small share of the global damages. India, on the other hand, is responsible for roughly 7% of global GHG emissions, but the SCC for India is more than 20% of the global SCC. This means that India will be disproportionately impacted by climate change despite its share of global emissions.</p>
+<p><a href="#fig-scc-share">Figure&nbsp;1</a> demonstrates a fundamental issue with climate change: the countries that are responsible for the majority of GHG emissions are not necessarily the countries that will bear the brunt of climate impacts. This figure shows the country-specific SCC (vertical axis) against the share of global GHG emissions for each country (horizontal axis). The US was responsible for roughly 15% of global GHG emissions in 2013, but the SCC for the US is roughly 12% of the global SCC. This means that emissions and damages are approximately proportional (note, however, that the US has a much greater share of <em>historical</em> emissions). China is responsible for roughly 30% of global GHG emissions in 2013, but the SCC for China is roughly 5% of the global SCC. This means that China is responsible for a disproportionate share of global emissions, but will bear a relatively small share of the global damages. India, on the other hand, is responsible for roughly 7% of global GHG emissions, but the SCC for India is more than 20% of the global SCC. This means that India will be disproportionately impacted by climate change despite its share of global emissions.</p>
 <div id="fig-scc-share" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./images/scc_country.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: Country-specific SCC vs.&nbsp;share of global emissions (Source: Ricke et al.&nbsp;(2018))</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;1: Country-specific SCC vs.&nbsp;share of global emissions (Source: <span class="citation" data-cites="ricke2018country">Ricke et al. (<a href="#ref-ricke2018country" role="doc-biblioref">2018</a>)</span>)</figcaption>
 </figure>
 </div>
+<!-- ## resources and further reading -->
 </section>
-<section id="resources-and-further-reading" class="level2">
-<h2 class="anchored" data-anchor-id="resources-and-further-reading">resources and further reading</h2>
-<ul>
-<li>Ricke et al, 2018. <a href="https://www.nature.com/articles/s41558-018-0282-y">“Country-level social cost of carbon,”</a> <em>Nature Climate Change</em>.</li>
-</ul>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">references</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-ricke2018country" class="csl-entry" role="listitem">
+Ricke, Katharine, Laurent Drouet, Ken Caldeira, and Massimo Tavoni. 2018. <span>“Country-Level Social Cost of Carbon.”</span> <em>Nature Climate Change</em> 8 (10): 895–900.
+</div>
+</div>
 
 
 </section>

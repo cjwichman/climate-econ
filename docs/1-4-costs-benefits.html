@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>climate-econ - 1.4 – what are the costs and benefits of climate change</title>
+<title>climate-econ - 1.4 – how do we measure the costs and benefits of climate change?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./1-4-costs-benefits.html" rel="" target="">
- <span class="dropdown-text">1.4 – what are the costs and benefits of climate change</span></a>
+ <span class="dropdown-text">1.4 – how do we measure the costs and benefits of climate change?</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./1-5-discounting.html" rel="" target="">
@@ -155,6 +155,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#benefit-cost-analysis" id="toc-benefit-cost-analysis" class="nav-link active" data-scroll-target="#benefit-cost-analysis">benefit-cost analysis</a></li>
   <li><a href="#valuing-mortality-risk" id="toc-valuing-mortality-risk" class="nav-link" data-scroll-target="#valuing-mortality-risk">valuing mortality risk</a></li>
   <li><a href="#present-value" id="toc-present-value" class="nav-link" data-scroll-target="#present-value">present value</a></li>
+  <li><a href="#benefit-cost-criterion" id="toc-benefit-cost-criterion" class="nav-link" data-scroll-target="#benefit-cost-criterion">benefit-cost criterion</a></li>
   <li><a href="#resources-and-further-reading" id="toc-resources-and-further-reading" class="nav-link" data-scroll-target="#resources-and-further-reading">resources and further reading</a></li>
   </ul>
 </nav>
@@ -164,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">1.4 – what are the costs and benefits of climate change</h1>
+<h1 class="title">1.4 – how do we measure the costs and benefits of climate change?</h1>
 </div>
 
 
@@ -186,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Benefit-cost analysis allows us to make decisons on whether we move forward with a project. We make benefit-cost decisions every day, but for climate change, we’re usually interested the actions of a government deciding whether to move forward with a policy that affect GHG emissions. For climate change, we bear costs of reducing emissions in the short run, but the benefits we receive might play out over a longer time horizon.</p>
 <p>The basic steps for conducting a benefit-cost analysis are as follows:</p>
 <ol type="1">
-<li>Set up the framework for analysis (define alternatives &amp; baseline [i.e., “doing nothing”])</li>
+<li>Set up the framework for analysis (define alternatives &amp; baseline, i.e., “doing nothing”)</li>
 <li>Decide whose costs &amp; benefits should be recognized</li>
 <li>Identify and categorize costs &amp; benefits</li>
 <li>Project costs and benefits over the life of each alternative</li>
@@ -198,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="valuing-mortality-risk" class="level2">
 <h2 class="anchored" data-anchor-id="valuing-mortality-risk">valuing mortality risk</h2>
-<p>Often, one of the biggest benefits of any environmental regulation is the reduction in deaths that result from environmental pollution. Climate change is no different. Climate change will increase the frequency and intensity of heat waves, tropical cyclones, drought (which can lead to crop failure and food insecurity), forest fires, and so forth. These events will increase the risk of death for people around the world. Reducing GHG emissions will reduce the risk of these events, which will reduce the risk of death. One way to value that benefit is to use the <strong>value of a statistical life (VSL)</strong> (also known as the <em>value of mortality risk reductions</em>). The VSL is the amount of money that a person is willing to pay to reduce their risk of death by a small amount. The way it is calculated is as follows. Imagine gathering 100,000 people. Then, ask each of them how much they would be willing to pay to reduce their risk of death by 1 in 100,000 that year.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> If the average person is willing to pay $100 for a reducing the risk of death by 0.001%, then we would multiply the average person’s willingness to pay by 100,000 to arrive at a VSL estimate of $10,000,000. This value is approximately the current value used by the US government to value mortality risk reductions.</p>
+<p>Often, one of the biggest benefits of any environmental regulation is the reduction in deaths that result from environmental pollution. Climate change is no different. Climate change will increase the frequency and intensity of heat waves, tropical cyclones, drought (which can lead to crop failure and food insecurity), forest fires, and so forth. These events will increase the risk of death for people around the world. Reducing GHG emissions will reduce the risk of these events, which will reduce the risk of death. One way to value that benefit is to use the <strong>value of a statistical life (VSL)</strong> (also known as the <em>value of mortality risk reductions</em>). The VSL is the amount of money that a person is willing to pay to reduce their risk of death by a small amount. The way it is calculated is as follows. Imagine gathering 100,000 people. Then, ask each of them how much they would be willing to pay to reduce their risk of death by 1 in 100,000 that year.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> If the average person is willing to pay $100 for a reducing the risk of death by 0.001%, then multiplying that by the number of people in the group (100,000) gives us a VSL estimate of $10,000,000. This value is approximately the current value used by the US government to value mortality risk reductions (see EPA’s guidance <a href="https://www.epa.gov/environmental-economics/mortality-risk-valuation">here</a>).</p>
 </section>
 <section id="present-value" class="level2">
 <h2 class="anchored" data-anchor-id="present-value">present value</h2>
@@ -211,7 +212,11 @@ ul.task-list li input[type="checkbox"] {
 <p>where <span class="math inline">\(b_t\)</span> is the amount of benefits received in each year <span class="math inline">\(t\)</span> and <span class="math inline">\(T\)</span> is the total number of years over which benefits are received. This is the same as the single period formula, but we repeat that formula for each year benefits accrue.</p>
 <p>Note, you can also calculate the PV of a stream of future costs using a “continuous time” version of the formula:</p>
 <p><span class="math display">\[PV(b_t) = b_t \exp(-rt)\]</span></p>
-<p>The basic idea behind discounting is that we are impatient. We would prefer to receive money now, rather than in the future. So, we discount future benefits and costs to reflect our degree of impatience. This idea stems from the fact that we can earn interest on money today. With a 5% interest rate, we should be indifferent between $100 today and $105 a year from now, because we could invest that $100 and earn $5 of interest payments in one year. Discounting just reverses that same idea. Nominal dollar amounts received in the future will be worth less than nominal dollar amounts received today.</p>
+<p>The basic idea behind discounting is that we are impatient. We would prefer to receive money now, rather than in the future. So, we discount future benefits and costs to reflect our degree of impatience. This idea stems from the fact that we can earn interest on money today. With a 5% interest rate, we should be indifferent between $100 today and $105 a year from now, because we could invest that $100 and earn $5 of interest payments in one year. Discounting just reverses that same idea. Nominal dollar amounts received in the future will be worth less than nominal dollar amounts received today. This is especially important with climate change because many of the benefits of climate change mitigation will occur very far in the future, while the costs will be borne today.</p>
+</section>
+<section id="benefit-cost-criterion" class="level2">
+<h2 class="anchored" data-anchor-id="benefit-cost-criterion">benefit-cost criterion</h2>
+<p>When deciding whether to move forward with a project, or choose among alternative projects, we want to make sure that the benefits are at least as great as the costs (or choose the project with the highest benefit-cost ratio). The benefit-cost criterion that we will adopt is called the <strong>potential Pareto Improvment (PPI)</strong> or <strong>Kaldor-Hicks criterion</strong>, which states that the benefits that accrue to the “winners” need to be large enough such that the “losers” could be compensated, even if that compensation never actually occurs.</p>
 </section>
 <section id="resources-and-further-reading" class="level2">
 <h2 class="anchored" data-anchor-id="resources-and-further-reading">resources and further reading</h2>

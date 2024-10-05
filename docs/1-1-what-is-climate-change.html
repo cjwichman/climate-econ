@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -62,6 +81,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -106,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./1-4-costs-benefits.html" rel="" target="">
- <span class="dropdown-text">1.4 – what are the costs and benefits of climate change</span></a>
+ <span class="dropdown-text">1.4 – how do we measure the costs and benefits of climate change?</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./1-5-discounting.html" rel="" target="">
@@ -155,8 +176,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#the-intergovernmental-panel-on-climate-change-ipcc" id="toc-the-intergovernmental-panel-on-climate-change-ipcc" class="nav-link" data-scroll-target="#the-intergovernmental-panel-on-climate-change-ipcc">the Intergovernmental Panel on Climate Change (IPCC)</a></li>
   <li><a href="#attribution-of-warming-to-human-activity" id="toc-attribution-of-warming-to-human-activity" class="nav-link" data-scroll-target="#attribution-of-warming-to-human-activity">attribution of warming to human activity</a></li>
   <li><a href="#equilibrium-climate-sensitivity" id="toc-equilibrium-climate-sensitivity" class="nav-link" data-scroll-target="#equilibrium-climate-sensitivity">equilibrium climate sensitivity</a></li>
+  <li><a href="#timing" id="toc-timing" class="nav-link" data-scroll-target="#timing">timing</a></li>
   <li><a href="#climate-vs.-weather" id="toc-climate-vs.-weather" class="nav-link" data-scroll-target="#climate-vs.-weather">climate vs.&nbsp;weather</a></li>
   <li><a href="#resources-and-further-reading" id="toc-resources-and-further-reading" class="nav-link" data-scroll-target="#resources-and-further-reading">resources and further reading</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">references</a></li>
   </ul>
 </nav>
     </div>
@@ -190,13 +213,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="the-carbon-cycle" class="level2">
 <h2 class="anchored" data-anchor-id="the-carbon-cycle">the carbon cycle</h2>
 <p>Really old plants and organic material decompose, creating fossil fuels (i.e., natural gas, oil, coal). When we burn fossil fuels, we release those carbon molecules as carbon dioxide (CO2) into the atmosphere. This disrupts the natural carbon cycle, which is the process by which carbon is exchanged between the atmosphere, oceans, and land.</p>
-<!---
+<!-- -
  ![The carbon cycle](https://www.researchgate.net/publication/343185753/figure/fig2/AS:916806327877635@1595595070933/The-Carbon-Cycle-Source-Alamy-2020-The-Carbon-Cycle-8.png) 
---->
+- -->
 </section>
 <section id="the-greenhouse-effect" class="level2">
 <h2 class="anchored" data-anchor-id="the-greenhouse-effect">the greenhouse effect</h2>
 <p>The greenhouse effect is the process by which the Earth’s atmosphere traps heat. The greenhouse effect is a natural process that keeps the Earth’s surface warm enough to support life. Without the greenhouse effect, the Earth’s surface would be about 30 degrees Celsius cooler.</p>
+<p>As we release more greenhouse gases into the atmosphere, the greenhouse effect becomes stronger by increasing the amount of solar energy that gets trapped in the atmosphere. This leads to global warming, which is the increase in the Earth’s average surface temperature. The main greenhouse gases are carbon dioxide (<span class="math inline">\(CO_2\)</span>), methane (<span class="math inline">\(CH_4\)</span>), and nitrous oxide (<span class="math inline">\(N_2O\)</span>).</p>
 </section>
 <section id="the-intergovernmental-panel-on-climate-change-ipcc" class="level2">
 <h2 class="anchored" data-anchor-id="the-intergovernmental-panel-on-climate-change-ipcc">the Intergovernmental Panel on Climate Change (IPCC)</h2>
@@ -211,6 +235,13 @@ ul.task-list li input[type="checkbox"] {
 <figcaption class="figure-caption">Attribution of warming to human activity. <em>Source:</em> IPCC (AR6), <a href="https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_SPM_Figure_1.png">[link].</a></figcaption>
 </figure>
 </div>
+<p>It is interesting to note how the IPCC’s statements on the attribution of climate change to human activity have evolved over time. <span class="citation" data-cites="hsiang2018economist">Hsiang and Kopp (<a href="#ref-hsiang2018economist" role="doc-biblioref">2018</a>, Table 2)</span> provide the table below that captures the evolving language used by the IPCC in its assessment reports, beginning with AR1 in 1990.</p>
+<div id="fig-evolution-attribution" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/hsiang_kopp_attribution.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Evolution of IPCC statements on human influence on climate change. <em>Source:</em> <span class="citation" data-cites="hsiang2018economist">Hsiang and Kopp (<a href="#ref-hsiang2018economist" role="doc-biblioref">2018</a>)</span>, Table 2.</figcaption>
+</figure>
+</div>
 </section>
 <section id="equilibrium-climate-sensitivity" class="level2">
 <h2 class="anchored" data-anchor-id="equilibrium-climate-sensitivity">equilibrium climate sensitivity</h2>
@@ -221,6 +252,11 @@ ul.task-list li input[type="checkbox"] {
 <figcaption class="figure-caption">Equilibrium climate sensitivity. <em>Source:</em> IPCC (AR6), <a href="https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_FAQ_7_3_Figure_1.png">[link]</a></figcaption>
 </figure>
 </div>
+</section>
+<section id="timing" class="level2">
+<h2 class="anchored" data-anchor-id="timing">timing</h2>
+<p>One challenge with <span class="math inline">\(CO_2\)</span> emissions is that there is a time lage between emissions and warming. Then, <span class="math inline">\(CO_2\)</span> tends to stay in the atmosphere for a long time. If we doubled <span class="math inline">\(CO_2\)</span> emissions today, we would not see the full warming effect for another 20-30 years. But, <span class="math inline">\(CO_2\)</span> dissipates very slowly (around 0.25% to 0.50% per year), which means that around 70% of <span class="math inline">\(CO_2\)</span> we emit today will still in the atmosphere in 100 years.</p>
+<p>Methane (<span class="math inline">\(CH_4\)</span>) operates differently. Methane has a much shorter lifetime in the atmosphere, but it is a much more potent greenhouse gas than <span class="math inline">\(CO_2\)</span>. This means that reducing methane emissions can have a more immediate impact on warming than reducing <span class="math inline">\(CO_2\)</span> emissions.</p>
 </section>
 <section id="climate-vs.-weather" class="level2">
 <h2 class="anchored" data-anchor-id="climate-vs.-weather">climate vs.&nbsp;weather</h2>
@@ -235,11 +271,18 @@ ul.task-list li input[type="checkbox"] {
 <section id="resources-and-further-reading" class="level2">
 <h2 class="anchored" data-anchor-id="resources-and-further-reading">resources and further reading</h2>
 <ul>
-<li>Hsiang and Kopp, 2018. <a href="https://www.aeaweb.org/articles?id=10.1257%2Fjep.32.4.3">“An Economist’s Guide to Climate Change Science,”</a> <em>Journal of Economic Perspectives</em>.</li>
 <li>IPCC, <a href="https://www.ipcc.ch/assessment-report/ar6/">Sixth Assessment Report</a>, 2021.</li>
 <li><a href="https://qz.com/817354/scientists-have-been-forecasting-that-burning-fossil-fuels-will-cause-climate-change-as-early-as-1882/">“A 1912 news article ominously forecasted the catastrophic effects of fossil fuels on climate change,”</a> Quartz, Oct.&nbsp;2016.</li>
 <li><a href="https://xkcd.com/1732/">A Timeline of Earth’s Average Temperature</a>, XKCD.</li>
 </ul>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">references</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-hsiang2018economist" class="csl-entry" role="listitem">
+Hsiang, Solomon, and Robert E. Kopp. 2018. <span>“An Economist’s Guide to Climate Change Science.”</span> <em>Journal of Economic Perspectives</em> 32 (4): 3–32.
+</div>
+</div>
 
 
 </section>
