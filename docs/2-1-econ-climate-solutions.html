@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -62,6 +81,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -106,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./1-4-costs-benefits.html" rel="" target="">
- <span class="dropdown-text">1.4 – what are the costs and benefits of climate change</span></a>
+ <span class="dropdown-text">1.4 – how do we measure the costs and benefits of climate change?</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./1-5-discounting.html" rel="" target="">
@@ -146,7 +167,35 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">overview</a></li>
+  <li><a href="#marginal-abatement-costs" id="toc-marginal-abatement-costs" class="nav-link" data-scroll-target="#marginal-abatement-costs">marginal abatement costs</a></li>
+  <li><a href="#command-and-control-policies" id="toc-command-and-control-policies" class="nav-link" data-scroll-target="#command-and-control-policies">command-and-control policies</a>
+  <ul class="collapse">
+  <li><a href="#performance-standards" id="toc-performance-standards" class="nav-link" data-scroll-target="#performance-standards">performance standards</a></li>
+  <li><a href="#technology-standards" id="toc-technology-standards" class="nav-link" data-scroll-target="#technology-standards">technology standards</a></li>
+  </ul></li>
+  <li><a href="#market-based-policies" id="toc-market-based-policies" class="nav-link" data-scroll-target="#market-based-policies">market-based policies</a>
+  <ul class="collapse">
+  <li><a href="#corrective-taxes" id="toc-corrective-taxes" class="nav-link" data-scroll-target="#corrective-taxes">corrective taxes</a>
+  <ul class="collapse">
+  <li><a href="#cost-effectiveness-of-carbon-taxes" id="toc-cost-effectiveness-of-carbon-taxes" class="nav-link" data-scroll-target="#cost-effectiveness-of-carbon-taxes">cost-effectiveness of carbon taxes</a></li>
+  <li><a href="#examples-of-carbon-taxes" id="toc-examples-of-carbon-taxes" class="nav-link" data-scroll-target="#examples-of-carbon-taxes">examples of carbon taxes</a></li>
+  </ul></li>
+  <li><a href="#cap-and-trade-programs" id="toc-cap-and-trade-programs" class="nav-link" data-scroll-target="#cap-and-trade-programs">cap-and-trade programs</a>
+  <ul class="collapse">
+  <li><a href="#examples-of-cap-and-trade-programs" id="toc-examples-of-cap-and-trade-programs" class="nav-link" data-scroll-target="#examples-of-cap-and-trade-programs">examples of cap-and-trade programs</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#comparison-of-policy-options" id="toc-comparison-of-policy-options" class="nav-link" data-scroll-target="#comparison-of-policy-options">comparison of policy options</a></li>
+  <li><a href="#prices-vs.-quantities" id="toc-prices-vs.-quantities" class="nav-link" data-scroll-target="#prices-vs.-quantities">prices vs.&nbsp;quantities</a></li>
+  <li><a href="#resources-and-further-reading" id="toc-resources-and-further-reading" class="nav-link" data-scroll-target="#resources-and-further-reading">resources and further reading</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">references</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -168,11 +217,229 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Climate change is a “missing markets” problem. As a result, economists tend to prefer market-based solutions. Two primary market-based solutions are carbon taxes and cap-and-trade systems. Both of these solutions are based on the idea of putting a price on carbon emissions. The idea is that if we put a price on carbon emissions, then firms will emit less carbon. This is because emitting carbon will become more expensive, and people will demand less of carbon-intensive goods and services and firms will be less interested in producing them.</p>
+<section id="overview" class="level1">
+<h1>overview</h1>
+<p>Climate change is a “missing markets” problem. Reducing GHG emissions provides benefits to society, but there is no formal mechanism to generate demand for emissions. But, we can model climate policies <em>as if</em> they operate as a demand curve for emissions reductions or GHG abatement.</p>
+<p>Economists tend to prefer market-based solutions for reducing GHGs. Two primary market-based solutions are carbon taxes and cap-and-trade systems. Both of these solutions are based on the idea of putting a price on carbon emissions. The idea is that if we put a price on carbon emissions, then firms will emit less carbon. This is because emitting carbon will become more expensive, and people will demand less of carbon-intensive goods and services and firms will be less interested in producing them.</p>
+<p>To understand how to compare different policies that reducing GHG emissions, it is helpful to remind ourselves what it is we’re trying to do. We want to maximize the net benefits of GHG abatment, which involves balancing the benefits of GHG abatement (i.e., reducing climate change) with the costs of abatement. Net benefits are maximized when the marginal benefits of abatement equal the marginal costs of abatement. This is what we refer to as the socially optimal, or “efficient,” level of GHG abatement.</p>
+<p>Policies to reduce GHG emissions attempt to do so at least cost. Imagine we know what level of GHG emissions we want to achieve—perhaps this is getting to “net zero” emissions or reducing emissions enough to keep us on track to meet agreements laid out in the Paris Accord. There are potentially many ways to reduce emissions to that level, but we want to find a way to reduce emissions in the least costly way to society. As a result, we often end up comparing and contrasting different policies to reduce emissions in terms of their costs of achieving a given emissions reduction.</p>
+</section>
+<section id="marginal-abatement-costs" class="level1">
+<h1>marginal abatement costs</h1>
+<p>Because comparing policies reduces to comparing costs, it is useful for us to revisit the marginal abatement cost curve. <strong>Marginal abatement costs (MACs)</strong> are the costs of reducing each additional emission of a pollutant. MACs reflect the minimum cost of achieving each unit of abatement (i.e., you always want to reduce the cheapest GHGs first). Think of switching from incandescent to LED lightbulbs, this technological switch is actually <em>negative</em> cost because the efficiency improvement pays for itself. As we move “up” the MAC curve, we are reducing GHG emissions at an increasing cost. Building a new nuclear power plant to offset coal might reduce emissions, but does so at a very high incremental cost.</p>
+<p>We can plot MACs either in terms of abatement or emissions. If we plot MAC curves in terms of abatement, we can think of the MAC curve as the supply curve for GHG abatement, which is upward sloping. If we plot MAC curves in terms of emissions, we can think of the MAC curve as the demand curve for GHG emissions, which is downward sloping.</p>
+</section>
+<section id="command-and-control-policies" class="level1">
+<h1>command-and-control policies</h1>
+<p>There are two primary types of policies to reduce GHG emissions: <strong>“Command-and-control” policies</strong> and <strong>market-based policies</strong>. Command-and-control policies are regulations that require firms to reduce emissions by a certain amount. Market-based policies are policies that create incentives for firms to reduce emissions.</p>
+<p>Two types of command-and-control policies are performance standards and technology standards.</p>
+<section id="performance-standards" class="level2">
+<h2 class="anchored" data-anchor-id="performance-standards">performance standards</h2>
+<p>For <strong>performance standards</strong>, the regulator (often the government) sets the amount GHG pollution that is allowed from each firm. A useful example is when the regulator sets the total emissions cap and then allows each firm to emit equal amounts. This is called a <em>uniform performance standard</em> (e.g., if there are <span class="math inline">\(N\)</span> regulated firms and the regulator chooses an emissions cap of <span class="math inline">\(\bar{E}\)</span>, then each firm would be allowed to emit no more than <span class="math inline">\(\bar{E}/N\)</span>.) In general, emissions standards are relatively easy to implement and monitor: the regulator only needs to choose an emissions level and require firms to report their emissions, which can be enforced via penalities if firms violate the standard. Because the regulator typically does not observe marginal abatement costs for each firm (or in aggregate), they have to set emissions caps with imperfect information. In general, this results in reducing industry-wide emissions in a costlier manner than alternative market-based based policies.</p>
+</section>
+<section id="technology-standards" class="level2">
+<h2 class="anchored" data-anchor-id="technology-standards">technology standards</h2>
+<p>For <strong>technology standards</strong>, the regulator chooses the technology that a firm must use to reduce GHG emissions. With technology standards, rather than choosing an emissions level, the regulator might mandate all firms to use the “best available” technology. This policy might help some under-performing firms with information asymmetry, but it might also increase costs for some firms. In general, technology standards could be more or less costly than performance standards in meeting a given emissions target.</p>
+</section>
+</section>
+<section id="market-based-policies" class="level1">
+<h1>market-based policies</h1>
+<p>Command-and-control policies are generally inefficient (or more costly) because they are fairly blunt tools for reducing emissions. Often, command-and-control policies Market-based policies can be more efficient because they create incentives for firms to reduce emissions in the least costly way. There are two primary types of market-based policies: <strong>taxes</strong> and <strong>cap-and-trade programs</strong>.</p>
+<section id="corrective-taxes" class="level2">
+<h2 class="anchored" data-anchor-id="corrective-taxes">corrective taxes</h2>
+<p>Corrective, or “Pigouvian,” taxes are taxes on the production or consumption of a good that generates negative externalities. Corrective taxes are designed to internalize the external costs of production or consumption. In the case of GHG emissions, a corrective tax is often referred to as a carbon tax.</p>
+<p>Carbon taxes punish bad behavior, similar to a “swear jar.” For an absolutely fantastic discussion of how carbon taxes work within this analogy, check out this video by University of Michigan professor <a href="https://fordschool.umich.edu/faculty/catherine-hausman">Catherine Hausman</a>:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/xxtElseSkZM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>The idea behind a carbon tax is straightforward. We want to reduce GHG emissions, so we tax goods that generate GHG emissions. This tax increases the marginal cost of those goods that generate GHG externalities, which shifts the supply curve up by the amount of the tax. This results in a new equilibrium level of consumption and production, which is lower than the original level in the private market equilibrium. The tax level is set equal to the marginal external damages that are generated by the polluting good, which then internalizes the external cost and achieves the socially optimal level of production. This is the level of production and consumption that maximizes net benefits.</p>
+<div id="fig-taxes" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/taxes.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: An example carbon tax on gasoline</figcaption>
+</figure>
+</div>
+<p>Consider <a href="#fig-taxes">Figure&nbsp;1</a>, which shows an example carbon tax in the market for gasoline. The supply curve reflects the marginal cost of producing gasoline. If suppliers of gasoline do not have to account for the externalities that arise from burning gasoline, they will sell 500 gallons/year at a price of $3.50/gallon. Burning gasoline emits GHGs, which impose costs on society via climate change. For each gallon of gasoline consumed, assume the external costs are $2/gallon.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> We can add this marginal damage to the supply curve to get the social marginal cost curve. The socially optimal amount of gasoline consumption/production occurs at the intersection of the demand curve and the marginal social cost curve. In order to achieve this level of consumption, the government can implement a tax of $2/gallon. This tax will increase the marginal cost of gasoline production by $2/gallon. This will result in a new equilibrium level of consumption of 400 gallons/year at a price (to consumers) of $5/gallon. Producers, on the other hand, will only receive $3/gallon for each gallon sold.</p>
+<p>But, if consumers pay $5/gallon and producers receive $3/gallon, where did the other $2/gallon go? This amount is the per-gallon tax revenue the government receives. In this example, consumers’s <strong>tax burden</strong> ($5.00 - $3.50) <span class="math inline">\(\times\)</span> 400 = $600, whereas the producers’ tax burden is ($3.50 - $3.00) <span class="math inline">\(\times\)</span> 400 = $200. The total tax burden is $800, which is the area of the shaded rectangle in <a href="#fig-taxes">Figure&nbsp;1</a>. This tax burden is the total amount of tax revenue the government receives. The amount of the tax that consumers/producers pay depends on the relative slopes of the demand and supply curves. With very elastic demand, consumers can shift consumption to close substitute goods, which means that producers will bear most of the tax burden. With very inelastic demand, consumers cannot shift consumption to close substitute goods, which means that consumers will bear most of the tax burden.</p>
+<p>Taxes also generate deadweight loss, which is shaded in gray in <a href="#fig-taxes">Figure&nbsp;1</a>. This area reflects lost consumer and producer surplus in the market. This DWL is not necessarily a bad thing. It reflects the fact that we are reducing consumption of a good that generates negative externalities. In setting the tax, we’ve eliminated the DWL that would have resulted from overconsumption of gasoline (not shown in the figure).</p>
+<p>The key point with carbon taxes is that they force consumers and producers to internalize the external costs of GHG emissions. Moreover, taxes generate revenue. The government can use that revenue to reduce other taxes, invest in clean energy, or provide other public goods. One major concern about the political viability of carbon taxes is that they increase the cost of carbon-intensive goods and services (imagine paying $1.50 more for each gallon of gasoline). This is a legitimate concern, but governments can use that tax revenue to mitigate distributional concerns. For example, the government could rebate all of the carbon tax revenue back to households.</p>
+<section id="cost-effectiveness-of-carbon-taxes" class="level3">
+<h3 class="anchored" data-anchor-id="cost-effectiveness-of-carbon-taxes">cost-effectiveness of carbon taxes</h3>
+<p>Taxes can achieve emissions reductions at a lower cost than alternative policies. To see this, consider two firms (A and B) facing a GHG price <span class="math inline">\(\tau^\star\)</span> in <a href="#fig-taxes-cost-effectiveness">Figure&nbsp;2</a>. In this figure, the width of the horizontal axis is fixed at the total level of emissions reductions needed in the the market (comprised of only the two firms). So, if we operate all the way on the left, then firm A produces all of the GHG abatement. If we operate all the way on the right, then firm B produces all of the GHG abatement. If we operate somewhere in the middle, then both firms produce some level of the required GHG abatement. When a tax on GHG emissions is set, each firm is going to abate GHG emissions up to the point where the tax equals their MAC curve.</p>
+<div id="fig-taxes-cost-effectiveness" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/taxes_costeff.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: Cost effectiveness of carbon taxes</figcaption>
+</figure>
+</div>
+<p>In <a href="#fig-taxes-cost-effectiveness">Figure&nbsp;2</a>, firm B abates relatively more emissions than firm A, because they have a lower MAC curve. That is, Firm B can abate emissions more cheaply, so they contribute more overall abatement. From a societal perspective, this is a good thing: we want emissions to be reduced in the cheapest way possible. To calculate the overall cost of emissions reductions under the tax, we would calculate the area underneath each MAC curve up to the point of abatement.</p>
+</section>
+<section id="examples-of-carbon-taxes" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-carbon-taxes">examples of carbon taxes</h3>
+<ul>
+<li><a href="https://www2.gov.bc.ca/gov/content/environment/climate-change/clean-economy/carbon-tax">British Columbia’s Carbon Tax</a></li>
+<li><a href="https://www.government.se/government-policy/taxes-and-tariffs/swedens-carbon-tax/">Sweden’s Carbon Tax</a></li>
+</ul>
+</section>
+</section>
+<section id="cap-and-trade-programs" class="level2">
+<h2 class="anchored" data-anchor-id="cap-and-trade-programs">cap-and-trade programs</h2>
+<p><strong>Cap-and-trade</strong> programs are market-based policies that set a limit (or, “cap”) on the total amount of GHG emissions that are allowed to be produced. The regulator then issues a number of permits that are equal to the cap. One permit gives firms the right to emit one ton of GHGs. The government then distributes the allowances to permits (either freely or through an auction). Firms can then trade allowances with each other. Firms that can reduce emissions at a low cost can sell their allowances to firms that cannot reduce emissions at a low cost. This creates a market for GHG emissions. The price of allowances is determined by the supply and demand for allowances. The government can set the cap at a level that achieves the socially optimal level of emissions, and then firms can trade allowances so that the emissions reduction is met at least cost.</p>
+<div id="fig-cap-and-trade" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-ct-initial" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/capandtrade_initial.png" class="img-fluid figure-img" data-ref-parent="fig-cap-and-trade"></p>
+<figcaption class="figure-caption">(a) Initial allocation</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-ct-final" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/capandtrade_final.png" class="img-fluid figure-img" data-ref-parent="fig-cap-and-trade"></p>
+<figcaption class="figure-caption">(b) Final allocation</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Example of cap-and-trade program.</figcaption><p></p>
+</figure>
+</div>
+<p>In <a href="#fig-cap-and-trade">Figure&nbsp;3</a>, imagine that the regulator freely allocates an equal number of permits to each firm (represented by point <span class="math inline">\(a_0\)</span>). At this level of abatement, firm B has MAC = <span class="math inline">\(p^B\)</span> and firm A has MAC = <span class="math inline">\(p^A\)</span>, where <span class="math inline">\(p^A &gt; p^B\)</span>. Because the marginal cost of abating one more ton of GHGs is cheaper for firm B than it is for firm A, firm A should be willing to purchase a permit from firm B rather than abating their last unit of GHGs. Once this transaction occurs, then the process repeats itself until the marginal cost of abatement is equalized across firms. The firms will trade until they reach point <span class="math inline">\(a^\star\)</span>, which is the socially optimal level of abatement. The price of permits is equal to the marginal cost of abatement for both firms. Notably, the equilibrium permit price is identical to the carbon tax that would achieve the same level of abatement. The cost of acheiving the emissions reductions is minimized, just like with a carbon tax.</p>
+<p>Cap-and-trade programs can also raise revenue if the permits are initially auctioned off. If permits are allocated freely, then all of this revenue is retained within the regulated market. Often, permits are granted based on historical emissions and given to firms for free. This is often done to reduce the political opposition to cap-and-trade programs. But, this can also result in windfall profits for firms that receive permits for free.</p>
+<section id="examples-of-cap-and-trade-programs" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-cap-and-trade-programs">examples of cap-and-trade programs</h3>
+<ul>
+<li><a href="https://climate.ec.europa.eu/eu-action/eu-emissions-trading-system-eu-ets_en">The European Union Emissions Trading System (EU ETS)</a></li>
+<li><a href="https://www.rggi.org/">The Regional Greenhouse Gas Initiative (RGGI)</a></li>
+<li><a href="https://ww2.arb.ca.gov/our-work/programs/cap-and-trade-program">California’s Cap-and-Trade Orogram</a></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="comparison-of-policy-options" class="level1">
+<h1>comparison of policy options</h1>
+<p><a href="#tbl-policies">Table&nbsp;1</a> summarizes the key features of different GHG policy options.</p>
+<div id="tbl-policies" class="anchored">
+<table class="table-striped table-hover table">
+<caption>Table&nbsp;1: Comparison of policy options</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>efficient?</th>
+<th>cost-effective?</th>
+<th>incentivizes innovation?</th>
+<th>uncertainty?</th>
+<th>generates revenue?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>command-and-control</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>certain quantity</td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td>corrective taxes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>uncertain quantity</td>
+<td>yes</td>
+</tr>
+<tr class="odd">
+<td>cap-and-trade</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes (but weaker than taxes)</td>
+<td>uncertain price</td>
+<td>maybe (by auctioning off permits)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Note:</p>
+<ul>
+<li>efficient means that the policy maximizes net surplus</li>
+<li>cost-effective means that the policy minimizes costs</li>
+<li>incentivizes innovation means that the policy dynamically encourages firms to develop new technologies that reduce emissions</li>
+<li>uncertainty refers to whether the policy generates uncertainty in the price or quantity of emissions reductions</li>
+</ul>
+</section>
+<section id="prices-vs.-quantities" class="level1">
+<h1>prices vs.&nbsp;quantities</h1>
+<p>When setting policies, the regulator typically does not know firms’ individual MACs or even the industry-wide aggregate MAC. Because of this information asymmetry, the regulator often has to set policies with imperfect information, which can lead to setting a tax too high or too low or setting a emissions cap too stringent or too lax. Both of these scenarios can result in inefficient, or costlier, outcomes.</p>
+<p>With uncertainty (or, more concretely, with imperfect information about firms’ MACs), it is often useful to think about the tradeoffs between setting a price (e.g., a tax) and setting a quantity (e.g., an emissions cap). <span class="citation" data-cites="weitzman1974prices">Weitzman (<a href="#ref-weitzman1974prices" role="doc-biblioref">1974</a>)</span> is a classic article that provides a general rule for when we should prefer a price-based policy (e.g., a tax) vs.&nbsp;a quantity-based policy (e.g., a cap-and-trade policy). The math in the article is a bit overwhelming for an undergraduate course, but the intuition can be summarized in a slightly less overwhelming graphical analysis below.</p>
+<div id="fig-prices-quantities" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-pvq-steep" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/pvq_steep.png" class="img-fluid figure-img" data-ref-parent="fig-prices-quantities"></p>
+<figcaption class="figure-caption">(a) Steep marginal benefits</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-pvq-flat" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/pvq_flat.png" class="img-fluid figure-img" data-ref-parent="fig-prices-quantities"></p>
+<figcaption class="figure-caption">(b) Flat marginal benefits</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: Comparing prices and quantities</figcaption><p></p>
+</figure>
+</div>
+<p>First, focus on the left-hand side of <a href="#fig-prices-quantities">Figure&nbsp;4</a>, which shows a steep marginal benefit curve. Consider the scenario where the regulator sets policy based on expected aggregate MAC, E[MAC]. The quantity cap they would set is where E[MAC] = MB. But, we actually experience the MAC<span class="math inline">\(_H\)</span> curve, so the regulator has set cap incorrectly. They would have preferred to set the cap at <span class="math inline">\(a^\star\)</span>. So, the regulator required a level of GHG abatement greater than what was socially optimal because they had to set policy without knowing the true MAC curve. How much social cost have they imposed on society? The area of the shaded green triangle is the area of DWL that is imposed from having set an incorrect cap.</p>
+<p>Similarly, still focusing on the left-hand side of <a href="#fig-prices-quantities">Figure&nbsp;4</a>, imagine the regulator also wants to set a tax based on E[MAC]. They choose a tax <span class="math inline">\(\tau_0\)</span>, which generates too little abatement. Without uncertainty, the regulator would have set the tax at the intersection of the MAC<span class="math inline">\(_H\)</span> curve and the MB curve. But, because they have imperfect information, they set the tax too low, resulting in too little abatement. This results in a DWL that is the area of the shaded red triangle.</p>
+<p>As is clear from the figure, the DWL from setting the cap too low is larger than the DWL from setting the tax too low. This means that getting the tax rate wrong is more costly than getting quantities wrong in this instance. This result is driven by the steepness of the MB curve. If the MB curve were flatter (see right-hand side of <a href="#fig-prices-quantities">Figure&nbsp;4</a>), then the DWL from setting the cap too low would be relatively larger, and the DWL from setting the tax too low would be relatively smaller.</p>
+<p>So, the general <strong>Weitzman rule</strong> is that if the MB curve is steep (relative to the MAC curve), then we should prefer a quantity-based policy (e.g., a cap-and-trade program). If the MB curve is flat (relative to the MAC curve), then we should prefer a price-based policy (e.g., a tax). Another way to say this is that if it’s a bigger deal to get quantities wrong, we should prefer a quantity policy. If it’s a bigger deal to get prices wrong, we should prefer a price policy.</p>
+<p>For climate change, we tend to fall into the “flat” MB scenario. Reducing emissions a little bit within a year is unlikely to dramatically change the overall level of climate change, so we should prefer a price-based policy. This is one reason why economists tend to prefer carbon taxes over cap-and-trade programs for climate change.</p>
+</section>
+<section id="resources-and-further-reading" class="level1">
+<h1>resources and further reading</h1>
+<ul>
+<li><a href="https://www.npr.org/2020/09/25/917060248/sell-me-your-climate-bombs">“Sell Me Your Climate Bombs,”</a> Planet Money (podcast), September 2020</li>
+<li><a href="https://www.scientificamerican.com/article/how-to-set-a-price-on-carbon-pollution/">“How to Set a Price on Carbon,”</a> Gilbert E. Metcalf, <em>Scientific American</em>, June 2020.</li>
+<li><a href="https://www.bostonreview.net/articles/trouble-carbon-pricing/">“The Trouble with Carbon Pricing,”</a> Leah C. Stokes &amp; Matto Mildenberger, <em>Boston Review</em>, September 2020.</li>
+</ul>
+</section>
+<section id="references" class="level1">
+<h1>references</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-linn2023transportation" class="csl-entry" role="listitem">
+Linn, Joshua, Virginia McConnell, Sophie Pesek, and Daniel Raimi. 2023. <span>“Transportation Taxes and Energy Transitions: Alternative Policy Designs for Funding US Road Infrastructure and Pricing Externalities.”</span> Resources for the Future.
+</div>
+<div id="ref-weitzman1974prices" class="csl-entry" role="listitem">
+Weitzman, Martin L. 1974. <span>“Prices <span class="nocase">vs.</span> Quantities.”</span> <em>The Review of Economic Studies</em> 41 (4): 477–91.
+</div>
+</div>
 
 
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Note that $2/gallon is approximately the level of the GHG emissions externality from gasoline, according to <span class="citation" data-cites="linn2023transportation">Linn et al. (<a href="#ref-linn2023transportation" role="doc-biblioref">2023</a>)</span>, who suggest an external GHG cost of $1.71 per gallon in 2021$.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
