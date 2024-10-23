@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>climate-econ - economics of climate change</title>
+<title>climate-econ - 2.4 – what don’t we know about climate change?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -62,6 +81,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -84,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -178,13 +199,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">introduction</a></li>
-  <li><a href="#disclaimer" id="toc-disclaimer" class="nav-link" data-scroll-target="#disclaimer"><strong>disclaimer</strong></a></li>
-  <li><a href="#course-overview" id="toc-course-overview" class="nav-link" data-scroll-target="#course-overview">course overview</a>
-  <ul class="collapse">
-  <li><a href="#part-1-causes-and-consequences-of-climate-change" id="toc-part-1-causes-and-consequences-of-climate-change" class="nav-link" data-scroll-target="#part-1-causes-and-consequences-of-climate-change">part 1 – causes and consequences of climate change</a></li>
-  <li><a href="#part-2-economic-approaches-to-solving-climate-change" id="toc-part-2-economic-approaches-to-solving-climate-change" class="nav-link" data-scroll-target="#part-2-economic-approaches-to-solving-climate-change">part 2 – economic approaches to solving climate change</a></li>
-  </ul></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">overview</a></li>
+  <li><a href="#risk-aversion" id="toc-risk-aversion" class="nav-link" data-scroll-target="#risk-aversion">risk aversion</a></li>
+  <li><a href="#the-precautionary-principle" id="toc-the-precautionary-principle" class="nav-link" data-scroll-target="#the-precautionary-principle">the precautionary principle</a></li>
+  <li><a href="#risk-management-and-climate-change" id="toc-risk-management-and-climate-change" class="nav-link" data-scroll-target="#risk-management-and-climate-change">risk management and climate change</a></li>
+  <li><a href="#fat-tails" id="toc-fat-tails" class="nav-link" data-scroll-target="#fat-tails">fat tails</a></li>
+  <li><a href="#weitzmans-dismal-theorem" id="toc-weitzmans-dismal-theorem" class="nav-link" data-scroll-target="#weitzmans-dismal-theorem">Weitzman’s “dismal theorem”</a></li>
+  <li><a href="#tipping-points" id="toc-tipping-points" class="nav-link" data-scroll-target="#tipping-points">tipping points</a></li>
+  <li><a href="#resources-and-further-reading" id="toc-resources-and-further-reading" class="nav-link" data-scroll-target="#resources-and-further-reading">resources and further reading</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">references</a></li>
   </ul>
 </nav>
     </div>
@@ -193,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">economics of climate change</h1>
+<h1 class="title">2.4 – what don’t we know about climate change?</h1>
 </div>
 
 
@@ -208,53 +231,96 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">introduction</h2>
-<p>This is a website that houses notes for an undergraduate course on the economics of climate change. This website mimics the course structure of <a href="http://www.caseyjwichman.com/">Casey Wichman’s</a> ECON-4210 course developed in the School of Economics at Georgia Tech. For a recent syllabus, see <a href="https://github.com/cjwichman/climate-econ/blob/main/econ4210_climate_fall2024.pdf">here.</a></p>
-<p>This course explores the economic causes and consequences of climate change—the “mother of all externalities”—and potential solutions. Misguided market forces, via unpriced and unregulated greenhouse gas (GHG) emissions, contribute to global warming. Because GHG emissions stem from economic decisions we make every day—from driving to work to powering our computers to eating a hamburger—the economic impact of policies aimed at reducing GHG emissions are pervasive. This course uses the tools of economics to understand the origins of climate change; to explore the effects of climate on different facets of the economy now and in the future; and to evaluate the effectiveness, costs, and benefits of policies designed to reduce climate change. Particular focus is given to:</p>
+<section id="overview" class="level1">
+<h1>overview</h1>
+<p>There a three major challenges to choosing the correct price on CO2 emissions:</p>
+<ol type="1">
+<li>What is the correct discount rate?</li>
+<li>How to measure damages from CO2 emissions?</li>
+<li>How to account for uncertainty in climate change?</li>
+</ol>
+<p>Specifically, how should we incorporate low-probability, high damage scenarios into our measures of the economic consequences of climate change and our policy decisions?</p>
+</section>
+<section id="risk-aversion" class="level1">
+<h1>risk aversion</h1>
+<p>As a society, we are generally <strong>risk averse</strong>, which means we need to be compensated (via a <em>“risk premium”</em>) to be indifferent between taking a gamble and accepting a “sure thing.” In other words: with risk-aversion, we would be willing-to-pay for a climate risk reduction.</p>
 <ul>
-<li>Understanding the methods used to measure and value damages from climate change</li>
-<li>Analyzing the pros and cons of market-based policies designed to reduce GHG emissions</li>
-<li>Investigating the role of adaptation and innovation as potential climate solutions</li>
-<li>Evaluating the equity implications of climate impacts and climate policy</li>
+<li>Risk-aversion can lead to a larger estimate of the SCC because of potential climate catastrophes</li>
+<li>Also provides justification for incorporating the value of reducing uncertainty into climate policy decisions.</li>
 </ul>
-<p>Students will acquire a broad understanding of the costs of unchecked climate change and an ability to evaluate current policy debates through an economic lens.</p>
 </section>
-<section id="disclaimer" class="level2">
-<h2 class="anchored" data-anchor-id="disclaimer"><strong>disclaimer</strong></h2>
-<p><strong>This website is a work-in-progress designed as a course supplement for my own students as the intended audience. As a result, these notes are necessarily incomplete as they serve as a complement to lectures. I am updating content sporadically throughout the semester. There are probably factual errors and all content is subject to change. Moreover, I am using this project as a tool to learn how to mess around with Quarto websites, so you should probably anticipate technical issues. Buyer beware.</strong></p>
-<p><strong>However, the longer-run goal of these course notes is to fill a gap for accessible, undergraduate-level resources on the Economics of Climate Change. Instructors should feel free to use these notes if they so desire.</strong></p>
-<p><strong>If you have suggestions, concerns, and/or words of anger or affirmation (or both), feel free to reach out to me at <a href="mailto:wichman@gatech.edu">wichman@gatech.edu</a></strong>.</p>
+<section id="the-precautionary-principle" class="level1">
+<h1>the precautionary principle</h1>
+<p>The <strong>precautionary principle</strong> states: “Where there are threats of serious or irreversible damage, lack of full scientific certainty shall not be used as a reason for postponing cost- effective measures to prevent environmental degradation.”</p>
+<ul>
+<li>Adopted by the UN Framework Convention on Climate Change (UNFCCC).</li>
+<li>Uncertainty about climate damages does not serve as an argument to delay action</li>
+<li>In the face of great uncertainty, a precautionary approach might even result in more stringent emissions-reductions targets or adaptational responses.</li>
+<li>Mitigation and adaptation measures should be implemented before full information is available and uncertainties regarding the scope and timing of climate change are resolved.</li>
+</ul>
+<p>The precautionary principle is inconsistent with standard benefit-cost analysis. Basic idea: it’s better to be safe than sorry, but how safe is safe enough?</p>
 </section>
-<section id="course-overview" class="level2">
-<h2 class="anchored" data-anchor-id="course-overview">course overview</h2>
-<section id="part-1-causes-and-consequences-of-climate-change" class="level3">
-<h3 class="anchored" data-anchor-id="part-1-causes-and-consequences-of-climate-change">part 1 – causes and consequences of climate change</h3>
-<ol type="1">
-<li><a href="./1-1-what-is-climate-change.html">what is climate change?</a></li>
-<li><a href="./1-2-climate-and-economy.html">how are the climate and the economy linked?</a></li>
-<li><a href="./1-3-climate-economics.html">why is climate change an economic problem?</a></li>
-<li><a href="./1-4-costs-benefits.html">how do we measure the costs and benefits of climate change?</a></li>
-<li><a href="./1-5-discounting.html">(how much) should i care about my grandchildren’s future?</a></li>
-<li><a href="./1-6-climate-damages.html">can we put a price on climate impacts?</a></li>
-<li><a href="./1-7-climate-burdens.html">who bears the burden of climate impacts?</a></li>
-</ol>
+<section id="risk-management-and-climate-change" class="level1">
+<h1>risk management and climate change</h1>
+<ul>
+<li><p>If climate damages are small, but will be worse when economy is strong <span class="math inline">\(\implies\)</span> discount rates should be higher (because climate change will be “easier” to live with)</p></li>
+<li><p>If climate damages are large and correlated with economic downturns <span class="math inline">\(\implies\)</span> discount rates should be low</p></li>
+<li><p>If there is a 5-10% chance of a climate catastrophe that crashes economies and alters life as we know it? <span class="math inline">\(\implies\)</span> lower discount rates to avoid financial collapse.</p>
+<ul>
+<li>What would we be willing to pay to avoid a 2008 financial crisis? The COVID pandemic?</li>
+</ul></li>
+<li><p>Investors need to be paid to take on more risk (i.e., to make them willing to buy a risky asset rather than a low-risk bond). If climate poses potentially catastrophic risk, then the “low-risk bond” of avoiding that risk is mitigating carbon emissions now.</p>
+<ul>
+<li>This thinking can lead to very small or even negative discount rates.</li>
+</ul></li>
+<li><p>Mitigating GHGs is like buying insurance against a catastrophic event.</p></li>
+</ul>
 </section>
-<section id="part-2-economic-approaches-to-solving-climate-change" class="level3">
-<h3 class="anchored" data-anchor-id="part-2-economic-approaches-to-solving-climate-change">part 2 – economic approaches to solving climate change</h3>
-<ol type="1">
-<li><a href="./2-1-econ-climate-solutions.html">how would an economist solve climate change?</a></li>
-<li><a href="./2-2-climate-adaptation.html">can’t we just live with climate change?</a> (<em>in progress</em>)</li>
-<li><a href="./2-3-distributional-effects.html">who pays for climate policy?</a> (<em>in progress</em>)</li>
-<li><a href="./2-4-behavior.html">does behavior undermine climate policy?</a> (<em>in progress</em>)</li>
-<li><a href="./2-5-uncertainty.html">what don’t we know about climate change?</a> (<em>in progress</em>)</li>
-<li><a href="./2-6-international-cooperation.html">can we address climate change on our own?</a> (<em>in progress</em>)</li>
-<li><a href="./2-7-geoengineering.html">can we fix climate change with this one weird trick?</a> (<em>in progress</em>)</li>
-<li><a href="./2-8-individual-behavior.html">is changing our own behavior the solution?</a> (<em>in progress</em>)</li>
-</ol>
+<section id="fat-tails" class="level1">
+<h1>fat tails</h1>
+<p>Recall that equilibrium climate sensitivity (ECS) is the change in global mean surface temperature that would result from a doubling of atmospheric <span class="math inline">\(CO_2\)</span> concentrations. ECS is a key parameter in climate models. Pre-industrial levels of CO2 concentrations were roughly 280 ppm. Current levels are around 420 ppm. So, we are roughly halfway to a doubling of CO2 concentrations. If GHG emissions continue on their current trajectory, we will reach a doubling of CO2 concentrations by roughly 2050. ECS is useful because it tells us how global mean surface temperature will change in response to GHG concentrations in the atmosphere.</p>
+<p>Regarding ECS, IPCC AR6 states: “Improved knowledge of climate processes, paleoclimate evidence and the response of the climate system to increasing radiative forcing gives a best estimate of equilibrium climate sensitivity of 3°C with a narrower range compared to AR5.” And, “…the very likely range of equilibrium climate sensitivity is between 2°C (high confidence) and 5°C (medium confidence).”</p>
+<p>In IPCC parlance, “very likely” means 90-100% likelhood. So, the IPCC is saying that there is a 90% probability that climate sensitivity is between 2°C and 5°C. But, there is up to a 10% chance that climate sensitivity is greater than 5°C. This is a <strong>fat tail</strong>. A fat tail is a probability distribution that has a higher probability of extreme events than a normal distribution. The ECS distribution is fat-tailed because the likelihood of a very high ECS is greater than a normal distribution would predict. In <a href="#fig-ecs">Figure&nbsp;1</a>, which shows estimates of the ECS distribution from various studies, the probability of exceeding 5°C is roughly 10% (which is represented by the “thickness” of the right tail of the distribution).</p>
+<div id="fig-ecs" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/ecs.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Equilibrium climate sensitivity</figcaption>
+</figure>
+</div>
+<p>Of course, the IPCC’s best guess is that ECS will be roughly 3°C. But, there is a non-trivial chance that ECS will be much higher than 3°C. This fat tail is concerning because we really don’t know what the economic consequences of global climate change on such a scale might be. The consequences could be catastrophic. The likelihood of getting into a car accident or having your home burn down is low—lower than 10% each year—but we are required to take out insurance policies against these low-probability, high-cost events.</p>
+<p>In their book <em>Climate Shock</em>, Wagner and Weitzman summarize this point nicely (although their quote is based on slightly out-of-date numbers): <em>“We don’t know the full implications of an eventual 6°C (11°F) temperature change. We can’t know. It’s a blind planetary gamble. Devastating home fires, car crashes, and other personal catastrophes are almost always much less likely than 10 percent. And still, people take out insurance to cover against these remote possibilities, or are even required to do so by laws that hope to avoid pushing these costs onto society. Risks like this on a planetary scale should not—must not—be pushed onto society.”</em></p>
+<p>If the distribution of damages from a given level of warming has a “fat tail” (damages don’t go to zero probability fast enough), the optimal policy prescription may change dramatically.</p>
+</section>
+<section id="weitzmans-dismal-theorem" class="level1">
+<h1>Weitzman’s “dismal theorem”</h1>
+<p>As a result of fat tails, Weitzman (2009) argues that the expected value of climate damages is infinite. This is because the expected value of climate damages is the sum of the probability of each level of climate damages multiplied by the level of climate damages. If there is a non-zero probability of catastrophic climate damages (e.g., that could dramatically affect the global economy and generate substantial loss of human life), then the expected value of climate marginal damages could be infinite. This is Weitzman’s “dismal theorem.” In other words, if the probability of catastrophic climate damages is non-zero, then the SCC—that is, the marginal benefit of reducing one ton of GHG emissions—would be infinite. This is clearly an absurd result. But, it is a consequence of fat tailed climate risk.</p>
+<p>The dismal theorem is effectively the precautionary principle in action: When a potentially serious risk exists, but significant scientific uncertainty also exists, action should not wait until all uncertainty is resolved.</p>
+</section>
+<section id="tipping-points" class="level1">
+<h1>tipping points</h1>
+<p>A <strong>tipping point</strong> is a threshold (point) that, when exceeded, can lead to large, abrupt, and discontinuous shifts in the state of the system. Tipping points are often characterized by a <strong>hysteresis response</strong>, which states that a system does not return to its original state after forcing is removed. In other words, going past a tipping point results in a new, irreversible equilibrium.</p>
+<p>Here are a few key examples of tipping points:</p>
+<ul>
+<li><em>Ocean methane hydrates</em> — solid formations of methane deep in the ocean (solid because of cold &amp; pressure). As oceans become warmer, methane hydrates can destabilize, releasing methane into the atmosphere and ocean (leading to acidification).</li>
+<li><em>Permafrost carbon feedbacks</em> — as permafrost thaws around the arctic and other cold-climates, carbon dioxide and methane are released.</li>
+<li><em>Arctic sea ice / Surface Albedo Feedback</em> — Sea ice reflects solar radiation (because it’s bright, this is the albedo effect). As sea ice melts, the earth (particularly around the poles) warms more quickly.</li>
+<li><em>Amazon dieback</em> – loss in rain forest biomass due to deforestation and climate change. Leads to release in stored carbon, no longer a carbon sink, and biodiversity loss.</li>
+<li><em>Greenland and West Antarctic Ice Sheet disintegration</em> — Melting of ice sheets leads to sea-level rise (SLR)</li>
+<li><em>Atlantic Meridional Overturning Circulation (AMOC) slowdown</em> — changing density of water slows down Gulf Stream circulates warm water north and cold water south — generates weather patterns in Europe and SLR in US.</li>
+<li><em>Indian summer monsoon variability</em> — decrease in frequency of Indian monsoon, directly affects economic outcomes in South Asia (particularly in agriculture)</li>
+</ul>
+<p>Many changes in climate are irreversible even if we stop emitting GHGs today. Although, the worst case scenarios can still be avoided by reducing GHG emissions.</p>
+</section>
+<section id="resources-and-further-reading" class="level1">
+<h1>resources and further reading</h1>
+</section>
+<section id="references" class="level1">
+<h1>references</h1>
+<div id="refs" role="list">
+
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
