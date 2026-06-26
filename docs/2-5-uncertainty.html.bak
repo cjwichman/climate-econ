@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>climate-econ - 1.6 – can we put a price on climate impacts?</title>
+<title>climate-econ - 2.5 – what don’t we know about climate change?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,6 +81,7 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
@@ -198,13 +199,14 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-social-cost-of-carbon-scc" id="toc-the-social-cost-of-carbon-scc" class="nav-link active" data-scroll-target="#the-social-cost-of-carbon-scc">the social cost of carbon (SCC)</a></li>
-  <li><a href="#history-of-the-scc" id="toc-history-of-the-scc" class="nav-link" data-scroll-target="#history-of-the-scc">history of the SCC</a></li>
-  <li><a href="#how-is-the-scc-calculated" id="toc-how-is-the-scc-calculated" class="nav-link" data-scroll-target="#how-is-the-scc-calculated">how is the SCC calculated?</a></li>
-  <li><a href="#damage-functions" id="toc-damage-functions" class="nav-link" data-scroll-target="#damage-functions">damage functions</a></li>
-  <li><a href="#climate-damages" id="toc-climate-damages" class="nav-link" data-scroll-target="#climate-damages">climate damages</a></li>
-  <li><a href="#empirical-approach-to-estimating-climate-damages" id="toc-empirical-approach-to-estimating-climate-damages" class="nav-link" data-scroll-target="#empirical-approach-to-estimating-climate-damages">empirical approach to estimating climate damages</a></li>
-  <li><a href="#recent-evidence-on-the-magnitude-of-the-scc" id="toc-recent-evidence-on-the-magnitude-of-the-scc" class="nav-link" data-scroll-target="#recent-evidence-on-the-magnitude-of-the-scc">recent evidence on the magnitude of the SCC</a></li>
+  <li><a href="#note-development-in-progress" id="toc-note-development-in-progress" class="nav-link active" data-scroll-target="#note-development-in-progress"><span style="color:red;"><em>Note: development in progress…</em></span></a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">overview</a></li>
+  <li><a href="#risk-aversion" id="toc-risk-aversion" class="nav-link" data-scroll-target="#risk-aversion">risk aversion</a></li>
+  <li><a href="#the-precautionary-principle" id="toc-the-precautionary-principle" class="nav-link" data-scroll-target="#the-precautionary-principle">the precautionary principle</a></li>
+  <li><a href="#risk-management-and-climate-change" id="toc-risk-management-and-climate-change" class="nav-link" data-scroll-target="#risk-management-and-climate-change">risk management and climate change</a></li>
+  <li><a href="#fat-tails" id="toc-fat-tails" class="nav-link" data-scroll-target="#fat-tails">fat tails</a></li>
+  <li><a href="#weitzmans-dismal-theorem" id="toc-weitzmans-dismal-theorem" class="nav-link" data-scroll-target="#weitzmans-dismal-theorem">Weitzman’s “dismal theorem”</a></li>
+  <li><a href="#tipping-points" id="toc-tipping-points" class="nav-link" data-scroll-target="#tipping-points">tipping points</a></li>
   <li><a href="#resources-and-further-reading" id="toc-resources-and-further-reading" class="nav-link" data-scroll-target="#resources-and-further-reading">resources and further reading</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">references</a></li>
   </ul>
@@ -215,7 +217,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">1.6 – can we put a price on climate impacts?</h1>
+<h1 class="title">2.5 – what don’t we know about climate change?</h1>
 </div>
 
 
@@ -230,162 +232,97 @@ div.csl-indent {
 
 </header>
 
-<!-- ## key concepts
- -->
-<p>We have established that GHG emissions are a negative externality, so private and social marginal cost curves will differ by an amount known as the <em>marginal external damages</em> of GHG emissions. This divergence results in overconsumption and overproduction of goods and services that generate GHG emissions. But, how do we know by how much the private and social marginal cost curves differ? In other words, how do we know the magnitude of the marginal external damages?</p>
-<section id="the-social-cost-of-carbon-scc" class="level2">
-<h2 class="anchored" data-anchor-id="the-social-cost-of-carbon-scc">the social cost of carbon (SCC)</h2>
-<p>The <strong>social cost of carbon (SCC)</strong> (a.k.a. <em>social cost of GHG emissions</em> or <em>social cost of <span class="math inline">\(CO_2\)</span></em>) is a measure of the economic damages that would result from emitting one additional ton of <span class="math inline">\(CO_2\)</span> (or GHGs) into the atmosphere. The SCC is intended to capture the total present value of the stream of damages that arise from emitting an additional ton of <span class="math inline">\(CO_2\)</span> in a particular year. The SCC is typically expressed in dollars per ton of <span class="math inline">\(CO_2\)</span> emitted. Until very recenntly, the federal government has used a value of roughly $51/ton (with some notable changes across political administrations).</p>
-<div class="callout callout-style-simple callout-none no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>As of 2023, the current value of the SCC used in federal regulatory analysis is $190/ton at a 2% discount rate <span class="citation" data-cites="epa2023">(<a href="#ref-epa2023" role="doc-biblioref">Environmental Protection Agency 2023</a>)</span>.</p>
-</div>
-</div>
-</div>
-<p>It is important to distinguish climate <em>impacts</em> from climate <em>damages</em>:</p>
-<ul>
-<li><strong>Climate impacts</strong> are the physical changes to the climate system that result from GHG emissions. For example, the melting of glaciers, the increase in global surface temperature, the increase in sea level, and so forth.</li>
-<li><strong>Climate damages</strong> are the monetized economic costs that result from climate impacts. For example, declines in agricultural productivity, damages to coastal property, the loss of human life, and so forth.</li>
-</ul>
-<p>The way to use the SCC is straightforward. Imagine a regulation is predicted to reduce GHG emissions by 10,000 tons. We can multiply that reduction in emissions by the SCC to arrive at the total present value of the damages that are avoided by reducing emissions (e.g., $51/ton <span class="math inline">\(\times\)</span> 10,000 tons). This estimate is the monetized economic benefits of reducing 10,000 tons of GHG emissions.</p>
-<p>The following video provides a brief overview of the SCC:</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/nDuDUPfJLU0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="note-development-in-progress" class="level1">
+<h1><span style="color:red;"><em>Note: development in progress…</em></span></h1>
 </section>
-<section id="history-of-the-scc" class="level2">
-<h2 class="anchored" data-anchor-id="history-of-the-scc">history of the SCC</h2>
-<p>One might think that it would be obvious to incorporate climate damages into the costs and benefits of federal regulations, but this has not been the case. Here’s a rough history of the SCC as it has been used in federal regulatory policy in the US:</p>
-<ul>
-<li><p><strong>1990s &amp; 2000s:</strong> Indepedent researchers develop models to assess the economic costs of climate change.</p></li>
-<li><p><strong>2008:</strong> Federal appeals court ruled that federal agencies must monetize climate-related benefits in regulatory impact analyses (RIAs).</p></li>
-<li><p><strong>2010:</strong> Interagency Working Group (IWG) created to harmonize estimates of the SCC across federal agencies. First systematic SCC estimates provided by the IWG</p>
-<ul>
-<li><span class="math inline">\(\implies\)</span> SCC = $26/ton in 2020 at 3% discount rate.</li>
-</ul></li>
-<li><p><strong>2013-2016:</strong> Updates to modeling process leading to revised SCC estimates -</p>
-<ul>
-<li><span class="math inline">\(\implies\)</span> SCC = $42/ton in 2020 at 3% discount rate in $2007</li>
-</ul></li>
-<li><p><strong>Jan.&nbsp;2017:</strong> National Academies of Sciences’ study provides guidance on how the SCC should be updated to reflect the best available science.</p></li>
-<li><p><strong>Mar.&nbsp;2017:</strong> Trump executive order (EO-13783) disbands IWG. Citing OMB’s Circular A-4, directs agencies to use 7% discount rates and ignore climate damages outside the US.</p>
-<ul>
-<li><span class="math inline">\(\implies\)</span> SCC = $1/ton at 7% discount rate</li>
-</ul></li>
-<li><p><strong>2021:</strong> Biden executive order (EO-13990) reverses Trump EO, re-establishes the IWG and previous SCC estimate, and calls for more comprehensive update.</p>
-<ul>
-<li><span class="math inline">\(\implies\)</span> SCC = $51/ton in 2020 at 3% discount rate in $2020</li>
-</ul></li>
-<li><p><strong>2022:</strong> Research teams provide updated SCC estimates to reflect best available evidence.</p></li>
-<li><p><strong>2023:</strong> EPA releases updated SCC estimates based on more recent scientific evidence.</p>
-<ul>
-<li><span class="math inline">\(\implies\)</span> SCC = $190/ton at 2% discount rate in $2020</li>
-</ul></li>
-</ul>
-</section>
-<section id="how-is-the-scc-calculated" class="level2">
-<h2 class="anchored" data-anchor-id="how-is-the-scc-calculated">how is the SCC calculated?</h2>
-<p>The SCC is calculated using <strong>integrated assessment models (IAMs)</strong>. IAMs are models that integrate climate science, economics, and other disciplines to project the impacts of climate change and the economic costs of those impacts. IAMs are used to project the SCC because they allow us to project the economic damages that result from climate change. IAMs, like all models, are necessarily simplifications of the real world that are intended to capture key features of the climate and economic systems.</p>
-<div id="fig-scc" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="./images/scc.png" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: Schematic of the SCC estimation process (Source: RFF)</figcaption>
-</figure>
-</div>
-<p>The SCC estimation process is as follows:</p>
+<section id="overview" class="level1">
+<h1>overview</h1>
+<p>There a three major challenges to choosing the correct price on CO2 emissions:</p>
 <ol type="1">
-<li>Project GDP, population, and the associated GHG emissions into the future (~300 years). These are called “socioeconomic scenarios” (i.e., different representations of what the world might look like in the future).</li>
-<li>Project changes to the physical climate system resulting from GHG emissions (e.g., changes in temperature, sea-level rise, ocean acidification, etc.).</li>
-<li>Estimate the economic damages that result from climate impacts.</li>
-<li>Discount future damages to the present day.</li>
-<li>Repeat steps 1-4 in a “perturbed” scenario that adds a “<span class="math inline">\(CO_2\)</span> pulse” into the climate system at a particular point in time.</li>
-<li>Calculate the present value of the difference in total damages between the perturbed and unperturbed scenarios. Rescale estimate to dollars per ton of <span class="math inline">\(CO_2\)</span>. This is an estimate of the SCC.</li>
+<li>What is the correct discount rate?</li>
+<li>How to measure damages from CO2 emissions?</li>
+<li>How to account for uncertainty in climate change?</li>
 </ol>
+<p>Specifically, how should we incorporate low-probability, high damage scenarios into our measures of the economic consequences of climate change and our policy decisions?</p>
 </section>
-<section id="damage-functions" class="level2">
-<h2 class="anchored" data-anchor-id="damage-functions">damage functions</h2>
-<p>The <strong>damage function</strong> is a key component of IAMs. The damage function is a mathematical representation of the relationship between climate impacts and economic damages. The damage function is often expressed as a percentage of GDP. For example, a damage function might state that a 1 degree increase in global surface temperature will reduce global GDP by 1%.</p>
-<p>An example of a damage function is shown in <a href="#fig-damage-function">Figure&nbsp;2</a>. This damage function is from <span class="citation" data-cites="burke2015global">Burke, Hsiang, and Miguel (<a href="#ref-burke2015global" role="doc-biblioref">2015</a>)</span> and shows the relationship between temperature and GDP per capita. The damage function is estimated using a regression model that relates temperature to GDP per capita. The figure compares the estimated damage function to previous estimates of climate damages from three influential IAMs (DICE, FUND, and Page). Depending on modeling assumptions, what’s included in the model, and so forth, the damage function can vary substantially across IAMs. Naturally, these choices can have a dramatic influence on the SCC.</p>
-<div id="fig-damage-function" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="./images/bhm_damage_fn.png" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: Example of a damage function (Source: Burke, Hsiang, &amp; Miguel (2015))</figcaption>
-</figure>
-</div>
-</section>
-<section id="climate-damages" class="level2">
-<h2 class="anchored" data-anchor-id="climate-damages">climate damages</h2>
-<p>Climate damages span a wide range of sectors and outcomes. <span class="citation" data-cites="larsen2015economic">Larsen et al. (<a href="#ref-larsen2015economic" role="doc-biblioref">2015</a>)</span> provide a broad overview of sectors that are likely to be affected by climate change in the US. These sectors are summarized nicely in this figure:</p>
-<div id="fig-climate-sectors" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="./images/damages_acp.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;3: Sectors affected by climate change in the US (Source: Larsen et al.&nbsp;(2015))</figcaption>
-</figure>
-</div>
-<p>There is not good evidence of the effect of climate change on all sectors due to data availability and the complexity of the climate system. For example, we have reasonably good evidence on how climate change will affect agriculture, energy use, heat-related mortality, and property damage from sea-level rise, at least in developed countries where administrative data permit researchers to estimate these relationships. But, we have less good evidence on how climate change will affect other sectors, such as mental health, conflict, and the distribution of infectious diseases, wildfire risk, tropical cyclones, and so forth.</p>
-</section>
-<section id="empirical-approach-to-estimating-climate-damages" class="level2">
-<h2 class="anchored" data-anchor-id="empirical-approach-to-estimating-climate-damages">empirical approach to estimating climate damages</h2>
-<p>A recent wave of research has focused on how economic outcomes respond to changes in weather, and then they use that estimated relationship to project how those outcomes will change in the future with climate change. This approach is used to estimate <strong>weather-response functions</strong>. A simplified example of a weather-response function looks like this:</p>
-<p><span class="math display">\[
-y = f(T)
-\]</span></p>
-<p>where <span class="math inline">\(y\)</span> is some economic outcome (e.g., agricultural yields, labor productivity, electricity use, etc.) and <span class="math inline">\(T\)</span> is some measure of weather (e.g., average temperature), and <span class="math inline">\(f()\)</span> represents the shape of the relationship between weather and the economic outcome (e.g., electricity use might be quadratic in temperature because people use more electricity when it is very hot and very cold, but less electricity when it is mild).</p>
-<p>These econometric weather-response functions can be useful tools to understanding how weather affects economic outcomes. But, there is (somewhat) limited ability for using historical data to understand how society will adapt to climate change. Adaptation would change the shape of <span class="math inline">\(f()\)</span>. If <span class="math inline">\(y\)</span> is heat-related mortality, then the shape of <span class="math inline">\(f()\)</span> might change as we society uses more air conditioning. That is, put simply, the relationship between temperature and mortality might be different in the future than it is today.</p>
-<p>In <a href="#fig-weather">Figure&nbsp;4</a> below, two representative climates are shown on the left. The weather-response functions for electricity use are shown on the top right. The top panel shows the weather-response function with/without adaptation, while the bottom right panel shows the outcome, electricity consumption, based on different climate scenarios. The figure demonstrates that we can use fluctuations in “pre-climate change” weather to estimate the relationship between temperature and electricity use, this gives us the shape of the quadratic-looking weather-response function in the top right. Then, based on expectations of “post-climate change” weather (top left), we can project how electricity use will change in the future (bottom right). Comparing the outcomes with and without climate change gives us an estimate of the economic damages from climate change.</p>
-<p>The challenge is understanding the degree to which the weather-response function will change in the future. With electricity use, we might expect that society will adapt to higher temperatures by using more air conditioning, which would change the shape of the weather-response function (as shown in the top right panel).</p>
-<div id="fig-weather" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="./images/auffhammer_weather.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: Emblematic weather-response functions with/without adaptation from <span class="citation" data-cites="auffhammer2018quantifying">Auffhammer (<a href="#ref-auffhammer2018quantifying" role="doc-biblioref">2018</a>)</span></figcaption>
-</figure>
-</div>
-<p>We can use some “cross-sectional” comparisons (i.e., giving the US Mexico’s climate) to understand how <span class="math inline">\(f()\)</span> might change but these comparisons are limited because we cannot control for all of the other differences between the US and Mexico, such as income, culture, etc.</p>
-<p>The empirical approach to estimating climate damages is a promising avenue for understanding the economic costs of climate change. But, it is not without limitations and challenges. Many have argued that</p>
-<p>Moreover, we can only estimate the relationship between temperature and outcomes for which we have good data. Certain outcomes, including a lot of non-market impacts of climate change, do not have good data precisely <em>because</em> they are not traded in markets.</p>
-</section>
-<section id="recent-evidence-on-the-magnitude-of-the-scc" class="level2">
-<h2 class="anchored" data-anchor-id="recent-evidence-on-the-magnitude-of-the-scc">recent evidence on the magnitude of the SCC</h2>
-<div id="fig-scc-rennert" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="./images/scc_rennert.png" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;5: Recent estimates of the SCC from <span class="citation" data-cites="rennert2022comprehensive">Rennert et al. (<a href="#ref-rennert2022comprehensive" role="doc-biblioref">2022</a>)</span></figcaption>
-</figure>
-</div>
-<p>One prominent example of recent estimates of the SCC that reflect the “best available science” are presented in <a href="#fig-scc-rennert">Figure&nbsp;5</a>. This approach was largely adopted by the US Government to estimate its official SCC. The preferred estimate in <span class="citation" data-cites="rennert2022comprehensive">Rennert et al. (<a href="#ref-rennert2022comprehensive" role="doc-biblioref">2022</a>)</span> is $185/ton and uses a 2% discount rate. This estimate is substantially larger than the $51/ton estimate previously used by the federal government. Part of this difference is due to the fact that the new estimate uses a 2% discount rate, while the previous estimate used a 3% discount rate. But, the new estimate also incorporates new evidence on climate damages and updated socioeconomic scenarios. Notably, however, the only damage sectors considered in the <span class="citation" data-cites="rennert2022comprehensive">Rennert et al. (<a href="#ref-rennert2022comprehensive" role="doc-biblioref">2022</a>)</span> study are agriculture, energy expenditures, sea-level rise, and heat-related mortality.</p>
-</section>
-<section id="resources-and-further-reading" class="level2">
-<h2 class="anchored" data-anchor-id="resources-and-further-reading">resources and further reading</h2>
+<section id="risk-aversion" class="level1">
+<h1>risk aversion</h1>
+<p>As a society, we are generally <strong>risk averse</strong>, which means we need to be compensated (via a <em>“risk premium”</em>) to be indifferent between taking a gamble and accepting a “sure thing.” In other words: with risk-aversion, we would be willing-to-pay for a climate risk reduction.</p>
 <ul>
-<li><a href="https://www.rff.org/publications/data-tools/scc-explorer/">Social Cost of Carbon Explorer</a>, Resources for the Future.</li>
-<li><a href="https://www.epa.gov/system/files/documents/2023-12/epa_scghg_2023_report_final.pdf">EPA Report on the Social Cost of Greenhouse Gases: Estimates Incorporating Recent Scientific Advances</a>, Environmental Protection Agency, 2023.</li>
+<li>Risk-aversion can lead to a larger estimate of the SCC because of potential climate catastrophes</li>
+<li>Also provides justification for incorporating the value of reducing uncertainty into climate policy decisions.</li>
 </ul>
 </section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">references</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-auffhammer2018quantifying" class="csl-entry" role="listitem">
-Auffhammer, Maximilian. 2018. <span>“Quantifying Economic Damages from Climate Change.”</span> <em>Journal of Economic Perspectives</em> 32 (4): 33–52.
+<section id="the-precautionary-principle" class="level1">
+<h1>the precautionary principle</h1>
+<p>The <strong>precautionary principle</strong> states: “Where there are threats of serious or irreversible damage, lack of full scientific certainty shall not be used as a reason for postponing cost- effective measures to prevent environmental degradation.”</p>
+<ul>
+<li>Adopted by the UN Framework Convention on Climate Change (UNFCCC).</li>
+<li>Uncertainty about climate damages does not serve as an argument to delay action</li>
+<li>In the face of great uncertainty, a precautionary approach might even result in more stringent emissions-reductions targets or adaptational responses.</li>
+<li>Mitigation and adaptation measures should be implemented before full information is available and uncertainties regarding the scope and timing of climate change are resolved.</li>
+</ul>
+<p>The precautionary principle is inconsistent with standard benefit-cost analysis. Basic idea: it’s better to be safe than sorry, but how safe is safe enough?</p>
+</section>
+<section id="risk-management-and-climate-change" class="level1">
+<h1>risk management and climate change</h1>
+<ul>
+<li><p>If climate damages are small, but will be worse when economy is strong <span class="math inline">\(\implies\)</span> discount rates should be higher (because climate change will be “easier” to live with)</p></li>
+<li><p>If climate damages are large and correlated with economic downturns <span class="math inline">\(\implies\)</span> discount rates should be low</p></li>
+<li><p>If there is a 5-10% chance of a climate catastrophe that crashes economies and alters life as we know it? <span class="math inline">\(\implies\)</span> lower discount rates to avoid financial collapse.</p>
+<ul>
+<li>What would we be willing to pay to avoid a 2008 financial crisis? The COVID pandemic?</li>
+</ul></li>
+<li><p>Investors need to be paid to take on more risk (i.e., to make them willing to buy a risky asset rather than a low-risk bond). If climate poses potentially catastrophic risk, then the “low-risk bond” of avoiding that risk is mitigating carbon emissions now.</p>
+<ul>
+<li>This thinking can lead to very small or even negative discount rates.</li>
+</ul></li>
+<li><p>Mitigating GHGs is like buying insurance against a catastrophic event.</p></li>
+</ul>
+</section>
+<section id="fat-tails" class="level1">
+<h1>fat tails</h1>
+<p>Recall that equilibrium climate sensitivity (ECS) is the change in global mean surface temperature that would result from a doubling of atmospheric <span class="math inline">\(CO_2\)</span> concentrations. ECS is a key parameter in climate models. Pre-industrial levels of CO2 concentrations were roughly 280 ppm. Current levels are around 420 ppm. So, we are roughly halfway to a doubling of CO2 concentrations. If GHG emissions continue on their current trajectory, we will reach a doubling of CO2 concentrations by roughly 2050. ECS is useful because it tells us how global mean surface temperature will change in response to GHG concentrations in the atmosphere.</p>
+<p>Regarding ECS, IPCC AR6 states: “Improved knowledge of climate processes, paleoclimate evidence and the response of the climate system to increasing radiative forcing gives a best estimate of equilibrium climate sensitivity of 3°C with a narrower range compared to AR5.” And, “…the very likely range of equilibrium climate sensitivity is between 2°C (high confidence) and 5°C (medium confidence).”</p>
+<p>In IPCC parlance, “very likely” means 90-100% likelhood. So, the IPCC is saying that there is a 90% probability that climate sensitivity is between 2°C and 5°C. But, there is up to a 10% chance that climate sensitivity is greater than 5°C. This is a <strong>fat tail</strong>. A fat tail is a probability distribution that has a higher probability of extreme events than a normal distribution. The ECS distribution is fat-tailed because the likelihood of a very high ECS is greater than a normal distribution would predict. In <a href="#fig-ecs">Figure&nbsp;1</a>, which shows estimates of the ECS distribution from various studies, the probability of exceeding 5°C is roughly 10% (which is represented by the “thickness” of the right tail of the distribution).</p>
+<div id="fig-ecs" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/ecs.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Equilibrium climate sensitivity</figcaption>
+</figure>
 </div>
-<div id="ref-burke2015global" class="csl-entry" role="listitem">
-Burke, Marshall, Solomon M. Hsiang, and Edward Miguel. 2015. <span>“Global Non-Linear Effect of Temperature on Economic Production.”</span> <em>Nature</em> 527 (7577): 235–39.
+<p>Of course, the IPCC’s best guess is that ECS will be roughly 3°C. But, there is a non-trivial chance that ECS will be much higher than 3°C. This fat tail is concerning because we really don’t know what the economic consequences of global climate change on such a scale might be. The consequences could be catastrophic. The likelihood of getting into a car accident or having your home burn down is low—lower than 10% each year—but we are required to take out insurance policies against these low-probability, high-cost events.</p>
+<p>In their book <em>Climate Shock</em>, Wagner and Weitzman summarize this point nicely (although their quote is based on slightly out-of-date numbers): <em>“We don’t know the full implications of an eventual 6°C (11°F) temperature change. We can’t know. It’s a blind planetary gamble. Devastating home fires, car crashes, and other personal catastrophes are almost always much less likely than 10 percent. And still, people take out insurance to cover against these remote possibilities, or are even required to do so by laws that hope to avoid pushing these costs onto society. Risks like this on a planetary scale should not—must not—be pushed onto society.”</em></p>
+<p>If the distribution of damages from a given level of warming has a “fat tail” (damages don’t go to zero probability fast enough), the optimal policy prescription may change dramatically.</p>
+</section>
+<section id="weitzmans-dismal-theorem" class="level1">
+<h1>Weitzman’s “dismal theorem”</h1>
+<p>As a result of fat tails, Weitzman (2009) argues that the expected value of climate damages is infinite. This is because the expected value of climate damages is the sum of the probability of each level of climate damages multiplied by the level of climate damages. If there is a non-zero probability of catastrophic climate damages (e.g., that could dramatically affect the global economy and generate substantial loss of human life), then the expected value of climate marginal damages could be infinite. This is Weitzman’s “dismal theorem.” In other words, if the probability of catastrophic climate damages is non-zero, then the SCC—that is, the marginal benefit of reducing one ton of GHG emissions—would be infinite. This is clearly an absurd result. But, it is a consequence of fat tailed climate risk.</p>
+<p>The dismal theorem is effectively the precautionary principle in action: When a potentially serious risk exists, but significant scientific uncertainty also exists, action should not wait until all uncertainty is resolved.</p>
+</section>
+<section id="tipping-points" class="level1">
+<h1>tipping points</h1>
+<p>A <strong>tipping point</strong> is a threshold (point) that, when exceeded, can lead to large, abrupt, and discontinuous shifts in the state of the system. Tipping points are often characterized by a <strong>hysteresis response</strong>, which states that a system does not return to its original state after forcing is removed. In other words, going past a tipping point results in a new, irreversible equilibrium.</p>
+<p>Here are a few key examples of tipping points:</p>
+<ul>
+<li><em>Ocean methane hydrates</em> — solid formations of methane deep in the ocean (solid because of cold &amp; pressure). As oceans become warmer, methane hydrates can destabilize, releasing methane into the atmosphere and ocean (leading to acidification).</li>
+<li><em>Permafrost carbon feedbacks</em> — as permafrost thaws around the arctic and other cold-climates, carbon dioxide and methane are released.</li>
+<li><em>Arctic sea ice / Surface Albedo Feedback</em> — Sea ice reflects solar radiation (because it’s bright, this is the albedo effect). As sea ice melts, the earth (particularly around the poles) warms more quickly.</li>
+<li><em>Amazon dieback</em> – loss in rain forest biomass due to deforestation and climate change. Leads to release in stored carbon, no longer a carbon sink, and biodiversity loss.</li>
+<li><em>Greenland and West Antarctic Ice Sheet disintegration</em> — Melting of ice sheets leads to sea-level rise (SLR)</li>
+<li><em>Atlantic Meridional Overturning Circulation (AMOC) slowdown</em> — changing density of water slows down Gulf Stream circulates warm water north and cold water south — generates weather patterns in Europe and SLR in US.</li>
+<li><em>Indian summer monsoon variability</em> — decrease in frequency of Indian monsoon, directly affects economic outcomes in South Asia (particularly in agriculture)</li>
+</ul>
+<p>Many changes in climate are irreversible even if we stop emitting GHGs today. Although, the worst case scenarios can still be avoided by reducing GHG emissions.</p>
+</section>
+<section id="resources-and-further-reading" class="level1">
+<h1>resources and further reading</h1>
+</section>
+<section id="references" class="level1">
+<h1>references</h1>
+<div id="refs" role="list">
+
 </div>
-<div id="ref-epa2023" class="csl-entry" role="listitem">
-Environmental Protection Agency. 2023. <span>“EPA Report on the Social Cost of Greenhouse Gases: Estimates Incorporating Recent Scientific Advances.”</span>
-</div>
-<div id="ref-larsen2015economic" class="csl-entry" role="listitem">
-Larsen, Kate, Trevor Houser, Solomon Hsiang, and Robert Kopp. 2015. <em>Economic Risks of Climate Change: An American Prospectus</em>. Columbia University Press.
-</div>
-<div id="ref-rennert2022comprehensive" class="csl-entry" role="listitem">
-Rennert, Kevin, Frank Errickson, Brian C Prest, Lisa Rennels, Richard G Newell, William Pizer, Cora Kingdon, et al. 2022. <span>“Comprehensive Evidence Implies a Higher Social Cost of CO2.”</span> <em>Nature</em> 610 (7933): 687–92.
-</div>
-</div>
-<!-- 
-To do:
--- climate damage section needs a lot more
- -->
 
 
 </section>
